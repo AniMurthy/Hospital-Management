@@ -14,4 +14,10 @@ Public Class Home
         pnt.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Pnt_add_Click(sender As Object, e As EventArgs) Handles Pnt_add.Click
+        Dim pnt_add As New Pnt_add
+        pnt_add.Show()
+        Me.Hide()
+    End Sub
 End Class

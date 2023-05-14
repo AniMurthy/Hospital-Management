@@ -50,7 +50,7 @@ Partial Class Pnt_view
         Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders
-        Me.DataGridView1.Size = New System.Drawing.Size(644, 186)
+        Me.DataGridView1.Size = New System.Drawing.Size(624, 186)
         Me.DataGridView1.TabIndex = 0
         '
         'PatientIDDataGridViewTextBoxColumn

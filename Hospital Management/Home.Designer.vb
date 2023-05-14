@@ -43,7 +43,7 @@ Partial Class Home
         'logout_btn
         '
         Me.logout_btn.Location = New System.Drawing.Point(544, 18)
-        Me.logout_btn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.logout_btn.Margin = New System.Windows.Forms.Padding(2)
         Me.logout_btn.Name = "logout_btn"
         Me.logout_btn.Size = New System.Drawing.Size(70, 29)
         Me.logout_btn.TabIndex = 6
@@ -69,7 +69,7 @@ Partial Class Home
         'Doc_view
         '
         Me.Doc_view.Location = New System.Drawing.Point(14, 163)
-        Me.Doc_view.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Doc_view.Margin = New System.Windows.Forms.Padding(2)
         Me.Doc_view.Name = "Doc_view"
         Me.Doc_view.Size = New System.Drawing.Size(233, 36)
         Me.Doc_view.TabIndex = 4
@@ -79,7 +79,7 @@ Partial Class Home
         'Doc_del
         '
         Me.Doc_del.Location = New System.Drawing.Point(14, 123)
-        Me.Doc_del.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Doc_del.Margin = New System.Windows.Forms.Padding(2)
         Me.Doc_del.Name = "Doc_del"
         Me.Doc_del.Size = New System.Drawing.Size(233, 36)
         Me.Doc_del.TabIndex = 3
@@ -89,7 +89,7 @@ Partial Class Home
         'Doc_updt
         '
         Me.Doc_updt.Location = New System.Drawing.Point(14, 83)
-        Me.Doc_updt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Doc_updt.Margin = New System.Windows.Forms.Padding(2)
         Me.Doc_updt.Name = "Doc_updt"
         Me.Doc_updt.Size = New System.Drawing.Size(233, 36)
         Me.Doc_updt.TabIndex = 2
@@ -99,7 +99,7 @@ Partial Class Home
         'Doc_add
         '
         Me.Doc_add.Location = New System.Drawing.Point(14, 42)
-        Me.Doc_add.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Doc_add.Margin = New System.Windows.Forms.Padding(2)
         Me.Doc_add.Name = "Doc_add"
         Me.Doc_add.Size = New System.Drawing.Size(233, 36)
         Me.Doc_add.TabIndex = 1
@@ -135,7 +135,7 @@ Partial Class Home
         'Pnt_view
         '
         Me.Pnt_view.Location = New System.Drawing.Point(14, 163)
-        Me.Pnt_view.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Pnt_view.Margin = New System.Windows.Forms.Padding(2)
         Me.Pnt_view.Name = "Pnt_view"
         Me.Pnt_view.Size = New System.Drawing.Size(233, 36)
         Me.Pnt_view.TabIndex = 4
@@ -145,7 +145,7 @@ Partial Class Home
         'Pnt_del
         '
         Me.Pnt_del.Location = New System.Drawing.Point(14, 123)
-        Me.Pnt_del.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Pnt_del.Margin = New System.Windows.Forms.Padding(2)
         Me.Pnt_del.Name = "Pnt_del"
         Me.Pnt_del.Size = New System.Drawing.Size(233, 36)
         Me.Pnt_del.TabIndex = 3
@@ -155,7 +155,7 @@ Partial Class Home
         'Pnt_updt
         '
         Me.Pnt_updt.Location = New System.Drawing.Point(14, 83)
-        Me.Pnt_updt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Pnt_updt.Margin = New System.Windows.Forms.Padding(2)
         Me.Pnt_updt.Name = "Pnt_updt"
         Me.Pnt_updt.Size = New System.Drawing.Size(233, 36)
         Me.Pnt_updt.TabIndex = 2
@@ -165,7 +165,7 @@ Partial Class Home
         'Pnt_add
         '
         Me.Pnt_add.Location = New System.Drawing.Point(14, 42)
-        Me.Pnt_add.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Pnt_add.Margin = New System.Windows.Forms.Padding(2)
         Me.Pnt_add.Name = "Pnt_add"
         Me.Pnt_add.Size = New System.Drawing.Size(233, 36)
         Me.Pnt_add.TabIndex = 1
@@ -185,7 +185,7 @@ Partial Class Home
         'new_apmt
         '
         Me.new_apmt.Location = New System.Drawing.Point(14, 234)
-        Me.new_apmt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.new_apmt.Margin = New System.Windows.Forms.Padding(2)
         Me.new_apmt.Name = "new_apmt"
         Me.new_apmt.Size = New System.Drawing.Size(516, 66)
         Me.new_apmt.TabIndex = 9
@@ -202,7 +202,7 @@ Partial Class Home
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.logout_btn)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Home"
         Me.Text = "Home"
         Me.GroupBox1.ResumeLayout(False)
