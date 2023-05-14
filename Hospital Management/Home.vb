@@ -10,6 +10,8 @@ Public Class Home
     End Sub
 
     Private Sub Pnt_view_Click(sender As Object, e As EventArgs) Handles Pnt_view.Click
-
+        Dim pnt As New Pnt_view
+        pnt.Show()
+        Me.Hide()
     End Sub
 End Class
