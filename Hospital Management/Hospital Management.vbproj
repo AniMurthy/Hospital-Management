@@ -111,6 +111,12 @@
     <Compile Include="Pnt_add.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Pnt_del.Designer.vb">
+      <DependentUpon>Pnt_del.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pnt_del.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Pnt_view.Designer.vb">
       <DependentUpon>Pnt_view.vb</DependentUpon>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pnt_add.resx">
       <DependentUpon>Pnt_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pnt_del.resx">
+      <DependentUpon>Pnt_del.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pnt_view.resx">
       <DependentUpon>Pnt_view.vb</DependentUpon>

@@ -36,6 +36,7 @@ Partial Class Home
         Me.Pnt_add = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.new_apmt = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -61,47 +62,47 @@ Partial Class Home
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.GroupBox1.Size = New System.Drawing.Size(256, 211)
+        Me.GroupBox1.Size = New System.Drawing.Size(153, 197)
         Me.GroupBox1.TabIndex = 7
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
         '
         'Doc_view
         '
-        Me.Doc_view.Location = New System.Drawing.Point(14, 163)
+        Me.Doc_view.Location = New System.Drawing.Point(8, 151)
         Me.Doc_view.Margin = New System.Windows.Forms.Padding(2)
         Me.Doc_view.Name = "Doc_view"
-        Me.Doc_view.Size = New System.Drawing.Size(233, 36)
+        Me.Doc_view.Size = New System.Drawing.Size(135, 36)
         Me.Doc_view.TabIndex = 4
         Me.Doc_view.Text = "View"
         Me.Doc_view.UseVisualStyleBackColor = True
         '
         'Doc_del
         '
-        Me.Doc_del.Location = New System.Drawing.Point(14, 123)
+        Me.Doc_del.Location = New System.Drawing.Point(8, 111)
         Me.Doc_del.Margin = New System.Windows.Forms.Padding(2)
         Me.Doc_del.Name = "Doc_del"
-        Me.Doc_del.Size = New System.Drawing.Size(233, 36)
+        Me.Doc_del.Size = New System.Drawing.Size(135, 36)
         Me.Doc_del.TabIndex = 3
         Me.Doc_del.Text = "Delete"
         Me.Doc_del.UseVisualStyleBackColor = True
         '
         'Doc_updt
         '
-        Me.Doc_updt.Location = New System.Drawing.Point(14, 83)
+        Me.Doc_updt.Location = New System.Drawing.Point(8, 71)
         Me.Doc_updt.Margin = New System.Windows.Forms.Padding(2)
         Me.Doc_updt.Name = "Doc_updt"
-        Me.Doc_updt.Size = New System.Drawing.Size(233, 36)
+        Me.Doc_updt.Size = New System.Drawing.Size(135, 36)
         Me.Doc_updt.TabIndex = 2
         Me.Doc_updt.Text = "Update"
         Me.Doc_updt.UseVisualStyleBackColor = True
         '
         'Doc_add
         '
-        Me.Doc_add.Location = New System.Drawing.Point(14, 42)
+        Me.Doc_add.Location = New System.Drawing.Point(8, 31)
         Me.Doc_add.Margin = New System.Windows.Forms.Padding(2)
         Me.Doc_add.Name = "Doc_add"
-        Me.Doc_add.Size = New System.Drawing.Size(233, 36)
+        Me.Doc_add.Size = New System.Drawing.Size(135, 36)
         Me.Doc_add.TabIndex = 1
         Me.Doc_add.Text = "Add"
         Me.Doc_add.UseVisualStyleBackColor = True
@@ -123,51 +124,51 @@ Partial Class Home
         Me.GroupBox2.Controls.Add(Me.Pnt_updt)
         Me.GroupBox2.Controls.Add(Me.Pnt_add)
         Me.GroupBox2.Controls.Add(Me.Label2)
-        Me.GroupBox2.Location = New System.Drawing.Point(274, 18)
+        Me.GroupBox2.Location = New System.Drawing.Point(377, 18)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.GroupBox2.Size = New System.Drawing.Size(256, 211)
+        Me.GroupBox2.Size = New System.Drawing.Size(153, 197)
         Me.GroupBox2.TabIndex = 8
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "GroupBox2"
         '
         'Pnt_view
         '
-        Me.Pnt_view.Location = New System.Drawing.Point(14, 163)
+        Me.Pnt_view.Location = New System.Drawing.Point(8, 151)
         Me.Pnt_view.Margin = New System.Windows.Forms.Padding(2)
         Me.Pnt_view.Name = "Pnt_view"
-        Me.Pnt_view.Size = New System.Drawing.Size(233, 36)
+        Me.Pnt_view.Size = New System.Drawing.Size(135, 36)
         Me.Pnt_view.TabIndex = 4
         Me.Pnt_view.Text = "View"
         Me.Pnt_view.UseVisualStyleBackColor = True
         '
         'Pnt_del
         '
-        Me.Pnt_del.Location = New System.Drawing.Point(14, 123)
+        Me.Pnt_del.Location = New System.Drawing.Point(8, 111)
         Me.Pnt_del.Margin = New System.Windows.Forms.Padding(2)
         Me.Pnt_del.Name = "Pnt_del"
-        Me.Pnt_del.Size = New System.Drawing.Size(233, 36)
+        Me.Pnt_del.Size = New System.Drawing.Size(135, 36)
         Me.Pnt_del.TabIndex = 3
         Me.Pnt_del.Text = "Delete"
         Me.Pnt_del.UseVisualStyleBackColor = True
         '
         'Pnt_updt
         '
-        Me.Pnt_updt.Location = New System.Drawing.Point(14, 83)
+        Me.Pnt_updt.Location = New System.Drawing.Point(8, 71)
         Me.Pnt_updt.Margin = New System.Windows.Forms.Padding(2)
         Me.Pnt_updt.Name = "Pnt_updt"
-        Me.Pnt_updt.Size = New System.Drawing.Size(233, 36)
+        Me.Pnt_updt.Size = New System.Drawing.Size(135, 36)
         Me.Pnt_updt.TabIndex = 2
         Me.Pnt_updt.Text = "Update"
         Me.Pnt_updt.UseVisualStyleBackColor = True
         '
         'Pnt_add
         '
-        Me.Pnt_add.Location = New System.Drawing.Point(14, 42)
+        Me.Pnt_add.Location = New System.Drawing.Point(8, 31)
         Me.Pnt_add.Margin = New System.Windows.Forms.Padding(2)
         Me.Pnt_add.Name = "Pnt_add"
-        Me.Pnt_add.Size = New System.Drawing.Size(233, 36)
+        Me.Pnt_add.Size = New System.Drawing.Size(135, 36)
         Me.Pnt_add.TabIndex = 1
         Me.Pnt_add.Text = "Add"
         Me.Pnt_add.UseVisualStyleBackColor = True
@@ -184,20 +185,32 @@ Partial Class Home
         '
         'new_apmt
         '
-        Me.new_apmt.Location = New System.Drawing.Point(14, 234)
+        Me.new_apmt.Location = New System.Drawing.Point(168, 27)
         Me.new_apmt.Margin = New System.Windows.Forms.Padding(2)
         Me.new_apmt.Name = "new_apmt"
-        Me.new_apmt.Size = New System.Drawing.Size(516, 66)
+        Me.new_apmt.Size = New System.Drawing.Size(210, 92)
         Me.new_apmt.TabIndex = 9
-        Me.new_apmt.Text = "Book New Appointment"
+        Me.new_apmt.Text = "View All Appointments"
         Me.new_apmt.UseCompatibleTextRendering = True
         Me.new_apmt.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(168, 123)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(210, 92)
+        Me.Button1.TabIndex = 10
+        Me.Button1.Text = "Book New Appointment"
+        Me.Button1.UseCompatibleTextRendering = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(626, 311)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.new_apmt)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -226,4 +239,5 @@ Partial Class Home
     Friend WithEvents Pnt_add As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents new_apmt As Button
+    Friend WithEvents Button1 As Button
 End Class
