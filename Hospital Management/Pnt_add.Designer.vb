@@ -39,7 +39,8 @@ Partial Class Pnt_add
         '
         'add_pnt
         '
-        Me.add_pnt.Location = New System.Drawing.Point(28, 242)
+        Me.add_pnt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.add_pnt.Location = New System.Drawing.Point(99, 337)
         Me.add_pnt.Name = "add_pnt"
         Me.add_pnt.Size = New System.Drawing.Size(209, 38)
         Me.add_pnt.TabIndex = 0
@@ -49,72 +50,81 @@ Partial Class Pnt_add
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(25, 47)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(25, 34)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(35, 13)
+        Me.Label1.Size = New System.Drawing.Size(51, 20)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Name"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(25, 73)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(25, 66)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(42, 13)
+        Me.Label2.Size = New System.Drawing.Size(63, 20)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Gender"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(25, 99)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(25, 98)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(26, 13)
+        Me.Label3.Size = New System.Drawing.Size(38, 20)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Age"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(25, 125)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(25, 130)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(45, 13)
+        Me.Label4.Size = New System.Drawing.Size(68, 20)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Address"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(25, 223)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(25, 231)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(84, 13)
+        Me.Label5.Size = New System.Drawing.Size(125, 20)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Contact Number"
         '
         'pnt_name_txt
         '
-        Me.pnt_name_txt.Location = New System.Drawing.Point(137, 40)
+        Me.pnt_name_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnt_name_txt.Location = New System.Drawing.Point(208, 34)
         Me.pnt_name_txt.Name = "pnt_name_txt"
-        Me.pnt_name_txt.Size = New System.Drawing.Size(100, 20)
+        Me.pnt_name_txt.Size = New System.Drawing.Size(100, 26)
         Me.pnt_name_txt.TabIndex = 6
         '
         'pnt_gen_txt
         '
-        Me.pnt_gen_txt.Location = New System.Drawing.Point(137, 66)
+        Me.pnt_gen_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnt_gen_txt.Location = New System.Drawing.Point(208, 66)
         Me.pnt_gen_txt.Name = "pnt_gen_txt"
-        Me.pnt_gen_txt.Size = New System.Drawing.Size(100, 20)
+        Me.pnt_gen_txt.Size = New System.Drawing.Size(100, 26)
         Me.pnt_gen_txt.TabIndex = 7
         '
         'pnt_age_txt
         '
-        Me.pnt_age_txt.Location = New System.Drawing.Point(137, 92)
+        Me.pnt_age_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnt_age_txt.Location = New System.Drawing.Point(208, 98)
         Me.pnt_age_txt.Name = "pnt_age_txt"
-        Me.pnt_age_txt.Size = New System.Drawing.Size(100, 20)
+        Me.pnt_age_txt.Size = New System.Drawing.Size(100, 26)
         Me.pnt_age_txt.TabIndex = 8
         '
         'pnt_address_txt
         '
-        Me.pnt_address_txt.Location = New System.Drawing.Point(137, 118)
+        Me.pnt_address_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnt_address_txt.Location = New System.Drawing.Point(208, 130)
         Me.pnt_address_txt.Multiline = True
         Me.pnt_address_txt.Name = "pnt_address_txt"
         Me.pnt_address_txt.Size = New System.Drawing.Size(100, 92)
@@ -122,23 +132,26 @@ Partial Class Pnt_add
         '
         'pnt_num_txt
         '
-        Me.pnt_num_txt.Location = New System.Drawing.Point(137, 216)
+        Me.pnt_num_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnt_num_txt.Location = New System.Drawing.Point(208, 228)
         Me.pnt_num_txt.Name = "pnt_num_txt"
-        Me.pnt_num_txt.Size = New System.Drawing.Size(100, 20)
+        Me.pnt_num_txt.Size = New System.Drawing.Size(100, 26)
         Me.pnt_num_txt.TabIndex = 10
         '
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(25, 9)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(103, 13)
+        Me.Label6.Size = New System.Drawing.Size(155, 20)
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "Enter Patient Details"
         '
         'bck_btn
         '
-        Me.bck_btn.Location = New System.Drawing.Point(236, 9)
+        Me.bck_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bck_btn.Location = New System.Drawing.Point(334, 5)
         Me.bck_btn.Name = "bck_btn"
         Me.bck_btn.Size = New System.Drawing.Size(72, 24)
         Me.bck_btn.TabIndex = 12
@@ -149,7 +162,7 @@ Partial Class Pnt_add
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(319, 309)
+        Me.ClientSize = New System.Drawing.Size(418, 400)
         Me.Controls.Add(Me.bck_btn)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.pnt_num_txt)

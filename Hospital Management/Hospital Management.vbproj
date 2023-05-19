@@ -111,6 +111,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -132,6 +133,12 @@
       <DependentUpon>Pnt_del.vb</DependentUpon>
     </Compile>
     <Compile Include="Pnt_del.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pnt_update.Designer.vb">
+      <DependentUpon>Pnt_update.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pnt_update.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Pnt_view.Designer.vb">
@@ -165,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pnt_del.resx">
       <DependentUpon>Pnt_del.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pnt_update.resx">
+      <DependentUpon>Pnt_update.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pnt_view.resx">
       <DependentUpon>Pnt_view.vb</DependentUpon>
