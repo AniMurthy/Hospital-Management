@@ -1,22 +1,27 @@
-﻿Imports System.Collections.Generic
-Imports System.Data.SqlClient
+﻿Imports System.Data.SqlClient
 
-Public Class Pnt_del
-    Private Sub Pnt_del_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'HospitalDataSet1.Patients' table. You can move, or remove it, as needed.
-        Me.PatientsTableAdapter1.Fill(Me.HospitalDataSet1.Patients)
-        'TODO: This line of code loads data into the 'HospitalDataSet.Patients' table. You can move, or remove it, as needed.
-        'Me.PatientsTableAdapter.Fill(Me.HospitalDataSet.Patients)
+Public Class Doc_del
+    Private Sub Doc_del_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'HospitalDataSet1.Doctor' table. You can move, or remove it, as needed.
+        Me.DoctorTableAdapter.Fill(Me.HospitalDataSet1.Doctor)
 
+    End Sub
+
+    Private Sub bck_btn_Click(sender As Object, e As EventArgs) Handles bck_btn.Click
+        Dim previousform As Form = Application.OpenForms.OfType(Of Home)().FirstOrDefault()
+        If previousform IsNot Nothing Then
+            previousform.Show()
+        End If
+        Me.Close()
     End Sub
 
     Private Sub del_rec_Click(sender As Object, e As EventArgs) Handles del_rec.Click
         Dim ids As New List(Of Integer)
         For Each row As DataGridViewRow In DataGridView1.Rows
             Console.WriteLine(row)
-            Dim checkbox As DataGridViewCheckBoxCell = CType(row.Cells(6), DataGridViewCheckBoxCell)
+            Dim checkbox As DataGridViewCheckBoxCell = CType(row.Cells(0), DataGridViewCheckBoxCell)
             If CBool(checkbox.Value) = True Then
-                ids.Add(CInt(row.Cells(0).Value))
+                ids.Add(CInt(row.Cells(1).Value))
             End If
         Next
 
@@ -25,7 +30,7 @@ Public Class Pnt_del
         Else
             For Each num As Integer In ids
                 Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
-                Dim cmd As New SqlCommand("Delete from Patients Where PatientID = @val", conn)
+                Dim cmd As New SqlCommand("Delete from Doctor Where DocID = @val", conn)
                 cmd.Parameters.AddWithValue("@val", num)
                 conn.Open()
                 Dim schemaTable As DataTable = conn.GetSchema("Columns", New String() {Nothing, Nothing, "Patients"})
@@ -38,14 +43,6 @@ Public Class Pnt_del
             Next
         End If
         MessageBox.Show("Successfully deleted Record")
-        Dim previousform As Form = Application.OpenForms.OfType(Of Home)().FirstOrDefault()
-        If previousform IsNot Nothing Then
-            previousform.Show()
-        End If
-        Me.Close()
-    End Sub
-
-    Private Sub bck_btn_Click(sender As Object, e As EventArgs) Handles bck_btn.Click
         Dim previousform As Form = Application.OpenForms.OfType(Of Home)().FirstOrDefault()
         If previousform IsNot Nothing Then
             previousform.Show()

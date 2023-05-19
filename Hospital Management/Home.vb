@@ -27,4 +27,15 @@ Public Class Home
         Me.Hide()
     End Sub
 
+    Private Sub Doc_view_Click(sender As Object, e As EventArgs) Handles Doc_view.Click
+        Dim doc_view As New Doc_view
+        doc_view.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Doc_del_Click(sender As Object, e As EventArgs) Handles Doc_del.Click
+        Dim doc_del As New Doc_del
+        doc_del.Show()
+        Me.Hide()
+    End Sub
 End Class
