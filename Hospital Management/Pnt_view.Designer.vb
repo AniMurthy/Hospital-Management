@@ -24,24 +24,23 @@ Partial Class Pnt_view
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.PatientIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PatientNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GenderDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AgeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AddressDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ContactNumberDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PatientsBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.PatientsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.HospitalDataSet = New Hospital_Management.HospitalDataSet()
         Me.PatientsTableAdapter = New Hospital_Management.HospitalDataSetTableAdapters.PatientsTableAdapter()
         Me.bck_btn = New System.Windows.Forms.Button()
-        Me.HospitalDataSet1 = New Hospital_Management.HospitalDataSet1()
-        Me.PatientsBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.PatientsTableAdapter1 = New Hospital_Management.HospitalDataSet1TableAdapters.PatientsTableAdapter()
+        Me.PatientsBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PatientsBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PatientsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.HospitalDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.HospitalDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PatientsBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PatientsBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -50,63 +49,17 @@ Partial Class Pnt_view
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.PatientIDDataGridViewTextBoxColumn, Me.PatientNameDataGridViewTextBoxColumn, Me.GenderDataGridViewTextBoxColumn, Me.AgeDataGridViewTextBoxColumn, Me.AddressDataGridViewTextBoxColumn, Me.ContactNumberDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.PatientsBindingSource1
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
+        Me.DataGridView1.DataSource = Me.PatientsBindingSource2
         Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders
-        Me.DataGridView1.Size = New System.Drawing.Size(832, 229)
+        Me.DataGridView1.Size = New System.Drawing.Size(624, 186)
         Me.DataGridView1.TabIndex = 0
         '
-        'PatientIDDataGridViewTextBoxColumn
+        'PatientsBindingSource1
         '
-        Me.PatientIDDataGridViewTextBoxColumn.DataPropertyName = "PatientID"
-        Me.PatientIDDataGridViewTextBoxColumn.HeaderText = "PatientID"
-        Me.PatientIDDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.PatientIDDataGridViewTextBoxColumn.Name = "PatientIDDataGridViewTextBoxColumn"
-        Me.PatientIDDataGridViewTextBoxColumn.ReadOnly = True
-        Me.PatientIDDataGridViewTextBoxColumn.Width = 125
-        '
-        'PatientNameDataGridViewTextBoxColumn
-        '
-        Me.PatientNameDataGridViewTextBoxColumn.DataPropertyName = "PatientName"
-        Me.PatientNameDataGridViewTextBoxColumn.HeaderText = "PatientName"
-        Me.PatientNameDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.PatientNameDataGridViewTextBoxColumn.Name = "PatientNameDataGridViewTextBoxColumn"
-        Me.PatientNameDataGridViewTextBoxColumn.Width = 125
-        '
-        'GenderDataGridViewTextBoxColumn
-        '
-        Me.GenderDataGridViewTextBoxColumn.DataPropertyName = "Gender"
-        Me.GenderDataGridViewTextBoxColumn.HeaderText = "Gender"
-        Me.GenderDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.GenderDataGridViewTextBoxColumn.Name = "GenderDataGridViewTextBoxColumn"
-        Me.GenderDataGridViewTextBoxColumn.Width = 125
-        '
-        'AgeDataGridViewTextBoxColumn
-        '
-        Me.AgeDataGridViewTextBoxColumn.DataPropertyName = "Age"
-        Me.AgeDataGridViewTextBoxColumn.HeaderText = "Age"
-        Me.AgeDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.AgeDataGridViewTextBoxColumn.Name = "AgeDataGridViewTextBoxColumn"
-        Me.AgeDataGridViewTextBoxColumn.Width = 125
-        '
-        'AddressDataGridViewTextBoxColumn
-        '
-        Me.AddressDataGridViewTextBoxColumn.DataPropertyName = "Address"
-        Me.AddressDataGridViewTextBoxColumn.HeaderText = "Address"
-        Me.AddressDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.AddressDataGridViewTextBoxColumn.Name = "AddressDataGridViewTextBoxColumn"
-        Me.AddressDataGridViewTextBoxColumn.Width = 125
-        '
-        'ContactNumberDataGridViewTextBoxColumn
-        '
-        Me.ContactNumberDataGridViewTextBoxColumn.DataPropertyName = "ContactNumber"
-        Me.ContactNumberDataGridViewTextBoxColumn.HeaderText = "ContactNumber"
-        Me.ContactNumberDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.ContactNumberDataGridViewTextBoxColumn.Name = "ContactNumberDataGridViewTextBoxColumn"
-        Me.ContactNumberDataGridViewTextBoxColumn.Width = 125
+        Me.PatientsBindingSource1.DataMember = "Patients"
         '
         'PatientsBindingSource
         '
@@ -124,43 +77,69 @@ Partial Class Pnt_view
         '
         'bck_btn
         '
-        Me.bck_btn.Location = New System.Drawing.Point(888, 9)
-        Me.bck_btn.Margin = New System.Windows.Forms.Padding(4)
+        Me.bck_btn.Location = New System.Drawing.Point(666, 7)
         Me.bck_btn.Name = "bck_btn"
-        Me.bck_btn.Size = New System.Drawing.Size(165, 47)
+        Me.bck_btn.Size = New System.Drawing.Size(124, 38)
         Me.bck_btn.TabIndex = 1
         Me.bck_btn.Text = "Back"
         Me.bck_btn.UseVisualStyleBackColor = True
         '
-        'HospitalDataSet1
+        'PatientsBindingSource2
         '
-        Me.HospitalDataSet1.DataSetName = "HospitalDataSet1"
-        Me.HospitalDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.PatientsBindingSource2.DataMember = "Patients"
+        Me.PatientsBindingSource2.DataSource = Me.HospitalDataSet
         '
-        'PatientsBindingSource1
+        'DataGridViewTextBoxColumn1
         '
-        Me.PatientsBindingSource1.DataMember = "Patients"
-        Me.PatientsBindingSource1.DataSource = Me.HospitalDataSet1
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "PatientID"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "PatientID"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
         '
-        'PatientsTableAdapter1
+        'DataGridViewTextBoxColumn2
         '
-        Me.PatientsTableAdapter1.ClearBeforeFill = True
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "PatientName"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "PatientName"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Gender"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Gender"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Age"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Age"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Address"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Address"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "ContactNumber"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "ContactNumber"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         '
         'Pnt_view
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1067, 554)
+        Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.bck_btn)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Pnt_view"
         Me.Text = "Pnt_view"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PatientsBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PatientsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.HospitalDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.HospitalDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PatientsBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PatientsBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -176,7 +155,14 @@ Partial Class Pnt_view
     Friend WithEvents AddressDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents ContactNumberDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents bck_btn As Button
-    Friend WithEvents HospitalDataSet1 As HospitalDataSet1
+    'Friend WithEvents HospitalDataSet1 As HospitalDataSet1
     Friend WithEvents PatientsBindingSource1 As BindingSource
-    Friend WithEvents PatientsTableAdapter1 As HospitalDataSet1TableAdapters.PatientsTableAdapter
+    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
+    Friend WithEvents PatientsBindingSource2 As BindingSource
+    'Friend WithEvents PatientsTableAdapter1 As HospitalDataSet1TableAdapters.PatientsTableAdapter
 End Class

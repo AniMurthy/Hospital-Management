@@ -26,14 +26,14 @@ Partial Class Pnt_del
         Me.bck_btn = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.HospitalDataSet1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.HospitalDataSet1 = New Hospital_Management.HospitalDataSet1()
+        'Me.HospitalDataSet1 = New Hospital_Management.HospitalDataSet1()
         Me.del_rec = New System.Windows.Forms.Button()
         Me.PatientsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.HospitalDataSet = New Hospital_Management.HospitalDataSet()
         Me.HospitalDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.PatientsTableAdapter = New Hospital_Management.HospitalDataSetTableAdapters.PatientsTableAdapter()
         Me.PatientsBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.PatientsTableAdapter1 = New Hospital_Management.HospitalDataSet1TableAdapters.PatientsTableAdapter()
+        'Me.PatientsTableAdapter = New Hospital_Management.HospitalDataSetTableAdapters.PatientsTableAdapter()
         Me.PatientIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PatientNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GenderDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -43,7 +43,7 @@ Partial Class Pnt_del
         Me.del = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.HospitalDataSet1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.HospitalDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        'CType(Me.HospitalDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PatientsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.HospitalDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.HospitalDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -76,13 +76,13 @@ Partial Class Pnt_del
         '
         'HospitalDataSet1BindingSource
         '
-        Me.HospitalDataSet1BindingSource.DataSource = Me.HospitalDataSet1
-        Me.HospitalDataSet1BindingSource.Position = 0
+        'Me.HospitalDataSet1BindingSource.DataSource = Me.HospitalDataSet1
+        'Me.HospitalDataSet1BindingSource.Position = 0
         '
         'HospitalDataSet1
         '
-        Me.HospitalDataSet1.DataSetName = "HospitalDataSet1"
-        Me.HospitalDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        'Me.HospitalDataSet1.DataSetName = "HospitalDataSet1"
+        'Me.HospitalDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'del_rec
         '
@@ -115,12 +115,12 @@ Partial Class Pnt_del
         '
         'PatientsBindingSource1
         '
-        Me.PatientsBindingSource1.DataMember = "Patients"
-        Me.PatientsBindingSource1.DataSource = Me.HospitalDataSet1
+        'Me.PatientsBindingSource1.DataMember = "Patients"
+        'Me.PatientsBindingSource1.DataSource = Me.HospitalDataSet1
         '
         'PatientsTableAdapter1
         '
-        Me.PatientsTableAdapter1.ClearBeforeFill = True
+        'Me.PatientsTableAdapter1.ClearBeforeFill = True
         '
         'PatientIDDataGridViewTextBoxColumn
         '
@@ -190,12 +190,12 @@ Partial Class Pnt_del
         Me.Name = "Pnt_del"
         Me.Text = "Pnt_del"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.HospitalDataSet1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.HospitalDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        'CType(Me.HospitalDataSet1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        'CType(Me.HospitalDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PatientsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.HospitalDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.HospitalDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PatientsBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        'CType(Me.PatientsBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -208,9 +208,9 @@ Partial Class Pnt_del
     Friend WithEvents PatientsTableAdapter As HospitalDataSetTableAdapters.PatientsTableAdapter
     Friend WithEvents del_rec As Button
     Friend WithEvents HospitalDataSet1BindingSource As BindingSource
-    Friend WithEvents HospitalDataSet1 As HospitalDataSet1
+    'Friend WithEvents HospitalDataSet1 As HospitalDataSet
     Friend WithEvents PatientsBindingSource1 As BindingSource
-    Friend WithEvents PatientsTableAdapter1 As HospitalDataSet1TableAdapters.PatientsTableAdapter
+    'Friend WithEvents PatientsTableAdapter1 As HospitalDataSetTableAdapters.PatientsTableAdapter
     Friend WithEvents PatientIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents PatientNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents GenderDataGridViewTextBoxColumn As DataGridViewTextBoxColumn

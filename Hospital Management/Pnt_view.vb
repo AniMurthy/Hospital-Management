@@ -1,7 +1,8 @@
 ﻿Public Class Pnt_view
     Private Sub Pnt_view_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'HospitalDataSet1.Patients' table. You can move, or remove it, as needed.
-        Me.PatientsTableAdapter1.Fill(Me.HospitalDataSet1.Patients)
+        'Me.PatientsTableAdapter1.Fill(Me.HospitalDataSet1.Patients)
+        Me.PatientsTableAdapter.Fill(Me.HospitalDataSet.Patients)
 
     End Sub
 

@@ -4,9 +4,9 @@ Imports System.Data.SqlClient
 Public Class Pnt_del
     Private Sub Pnt_del_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'HospitalDataSet1.Patients' table. You can move, or remove it, as needed.
-        Me.PatientsTableAdapter1.Fill(Me.HospitalDataSet1.Patients)
+        'Me.PatientsTableAdapter1.Fill(Me.HospitalDataSet1.Patients)
         'TODO: This line of code loads data into the 'HospitalDataSet.Patients' table. You can move, or remove it, as needed.
-        'Me.PatientsTableAdapter.Fill(Me.HospitalDataSet.Patients)
+        Me.PatientsTableAdapter.Fill(Me.HospitalDataSet.Patients)
 
     End Sub
 
@@ -24,7 +24,7 @@ Public Class Pnt_del
             MessageBox.Show("Please select record to delete")
         Else
             For Each num As Integer In ids
-                Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
+                Dim conn As New SqlConnection("Data Source=LAPTOP-C6S94HN4;Initial Catalog=Hospital;Integrated Security=True")
                 Dim cmd As New SqlCommand("Delete from Patients Where PatientID = @val", conn)
                 cmd.Parameters.AddWithValue("@val", num)
                 conn.Open()

@@ -26,9 +26,9 @@ Partial Class Doc_view
         Me.DataSet1 = New Hospital_Management.DataSet1()
         Me.DataSet1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.HospitalDataSet1 = New Hospital_Management.HospitalDataSet1()
+        Me.HospitalDataSet = New Hospital_Management.HospitalDataSet()
         Me.DoctorBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DoctorTableAdapter = New Hospital_Management.HospitalDataSet1TableAdapters.DoctorTableAdapter()
+        Me.DoctorTableAdapter = New Hospital_Management.HospitalDataSetTableAdapters.DoctorTableAdapter()
         Me.DocIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DocNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GenderDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -42,7 +42,7 @@ Partial Class Doc_view
         CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataSet1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.HospitalDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HospitalDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DoctorBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -71,13 +71,13 @@ Partial Class Doc_view
         '
         'HospitalDataSet1
         '
-        Me.HospitalDataSet1.DataSetName = "HospitalDataSet1"
-        Me.HospitalDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.HospitalDataSet.DataSetName = "HospitalDataSet"
+        Me.HospitalDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'DoctorBindingSource
         '
         Me.DoctorBindingSource.DataMember = "Doctor"
-        Me.DoctorBindingSource.DataSource = Me.HospitalDataSet1
+        Me.DoctorBindingSource.DataSource = Me.HospitalDataSet
         '
         'DoctorTableAdapter
         '
@@ -177,7 +177,7 @@ Partial Class Doc_view
         CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataSet1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.HospitalDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HospitalDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DoctorBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -186,9 +186,9 @@ Partial Class Doc_view
     Friend WithEvents DataSet1 As DataSet1
     Friend WithEvents DataSet1BindingSource As BindingSource
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents HospitalDataSet1 As HospitalDataSet1
+    Friend WithEvents HospitalDataSet As HospitalDataSet
     Friend WithEvents DoctorBindingSource As BindingSource
-    Friend WithEvents DoctorTableAdapter As HospitalDataSet1TableAdapters.DoctorTableAdapter
+    Friend WithEvents DoctorTableAdapter As HospitalDataSetTableAdapters.DoctorTableAdapter
     Friend WithEvents DocIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents DocNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents GenderDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
