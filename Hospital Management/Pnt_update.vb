@@ -29,7 +29,7 @@ Public Class Pnt_update
             If Integer.TryParse(pnt_age_txt.Text, chk) Then
                 If pnt_num_txt.Text.Length = 10 Then
                     'Esatblish Connection
-                    Dim conn As New SqlConnection("Data Source=LAPTOP-C6S94HN4;Initial Catalog=Hospital;Integrated Security=True")
+                    Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
                     'Dim cmd As New SqlCommand("Insert Into Patients (PatientName,Gender,Age,Address,ContactNumber) Values(@name,@gen,@age,@addr,@num)", conn)
                     Dim cmd As New SqlCommand("UPDATE Patients SET PatientName = @name, Gender = @gen, Age = @age ,Address = @addr,ContactNumber = @num WHERE  PatientID = @id", conn)
                     cmd.Parameters.AddWithValue("@id", id)
