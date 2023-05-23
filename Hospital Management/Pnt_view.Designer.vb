@@ -34,13 +34,13 @@ Partial Class Pnt_view
         Me.HospitalDataSet = New Hospital_Management.HospitalDataSet()
         Me.PatientsTableAdapter = New Hospital_Management.HospitalDataSetTableAdapters.PatientsTableAdapter()
         Me.bck_btn = New System.Windows.Forms.Button()
-        Me.HospitalDataSet1 = New Hospital_Management.HospitalDataSet1()
+        'Me.HospitalDataSet1 = New Hospital_Management.HospitalDataSet1()
         Me.PatientsBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.PatientsTableAdapter1 = New Hospital_Management.HospitalDataSet1TableAdapters.PatientsTableAdapter()
+        'Me.PatientsTableAdapter1 = New Hospital_Management.HospitalDataSet1TableAdapters.PatientsTableAdapter()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PatientsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.HospitalDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.HospitalDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        'CType(Me.HospitalDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PatientsBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -134,17 +134,17 @@ Partial Class Pnt_view
         '
         'HospitalDataSet1
         '
-        Me.HospitalDataSet1.DataSetName = "HospitalDataSet1"
-        Me.HospitalDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        'Me.HospitalDataSet1.DataSetName = "HospitalDataSet1"
+        'Me.HospitalDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'PatientsBindingSource1
         '
-        Me.PatientsBindingSource1.DataMember = "Patients"
-        Me.PatientsBindingSource1.DataSource = Me.HospitalDataSet1
+        'Me.PatientsBindingSource1.DataMember = "Patients"
+        'Me.PatientsBindingSource1.DataSource = Me.HospitalDataSet1
         '
         'PatientsTableAdapter1
         '
-        Me.PatientsTableAdapter1.ClearBeforeFill = True
+        'Me.PatientsTableAdapter1.ClearBeforeFill = True
         '
         'Pnt_view
         '
@@ -159,7 +159,7 @@ Partial Class Pnt_view
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PatientsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.HospitalDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.HospitalDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        'CType(Me.HospitalDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PatientsBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -176,7 +176,7 @@ Partial Class Pnt_view
     Friend WithEvents AddressDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents ContactNumberDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents bck_btn As Button
-    Friend WithEvents HospitalDataSet1 As HospitalDataSet1
+    'Friend WithEvents HospitalDataSet1 As HospitalDataSet1
     Friend WithEvents PatientsBindingSource1 As BindingSource
-    Friend WithEvents PatientsTableAdapter1 As HospitalDataSet1TableAdapters.PatientsTableAdapter
+    'Friend WithEvents PatientsTableAdapter1 As HospitalDataSet1TableAdapters.PatientsTableAdapter
 End Class
