@@ -43,10 +43,10 @@ Partial Class Home
         'logout_btn
         '
         Me.logout_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.logout_btn.Location = New System.Drawing.Point(544, 18)
-        Me.logout_btn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.logout_btn.Location = New System.Drawing.Point(725, 22)
+        Me.logout_btn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.logout_btn.Name = "logout_btn"
-        Me.logout_btn.Size = New System.Drawing.Size(70, 32)
+        Me.logout_btn.Size = New System.Drawing.Size(93, 39)
         Me.logout_btn.TabIndex = 6
         Me.logout_btn.Text = "Logout"
         Me.logout_btn.UseVisualStyleBackColor = True
@@ -58,11 +58,11 @@ Partial Class Home
         Me.GroupBox1.Controls.Add(Me.Doc_updt)
         Me.GroupBox1.Controls.Add(Me.Doc_add)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(14, 18)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.GroupBox1.Location = New System.Drawing.Point(19, 22)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.GroupBox1.Size = New System.Drawing.Size(153, 198)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(204, 244)
         Me.GroupBox1.TabIndex = 7
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Doctor"
@@ -70,10 +70,10 @@ Partial Class Home
         'Doc_view
         '
         Me.Doc_view.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Doc_view.Location = New System.Drawing.Point(8, 147)
-        Me.Doc_view.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Doc_view.Location = New System.Drawing.Point(11, 181)
+        Me.Doc_view.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Doc_view.Name = "Doc_view"
-        Me.Doc_view.Size = New System.Drawing.Size(135, 42)
+        Me.Doc_view.Size = New System.Drawing.Size(180, 52)
         Me.Doc_view.TabIndex = 4
         Me.Doc_view.Text = "View"
         Me.Doc_view.UseVisualStyleBackColor = True
@@ -81,10 +81,10 @@ Partial Class Home
         'Doc_del
         '
         Me.Doc_del.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Doc_del.Location = New System.Drawing.Point(8, 103)
-        Me.Doc_del.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Doc_del.Location = New System.Drawing.Point(11, 127)
+        Me.Doc_del.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Doc_del.Name = "Doc_del"
-        Me.Doc_del.Size = New System.Drawing.Size(135, 43)
+        Me.Doc_del.Size = New System.Drawing.Size(180, 53)
         Me.Doc_del.TabIndex = 3
         Me.Doc_del.Text = "Delete"
         Me.Doc_del.UseVisualStyleBackColor = True
@@ -92,10 +92,10 @@ Partial Class Home
         'Doc_updt
         '
         Me.Doc_updt.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Doc_updt.Location = New System.Drawing.Point(8, 59)
-        Me.Doc_updt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Doc_updt.Location = New System.Drawing.Point(11, 73)
+        Me.Doc_updt.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Doc_updt.Name = "Doc_updt"
-        Me.Doc_updt.Size = New System.Drawing.Size(135, 43)
+        Me.Doc_updt.Size = New System.Drawing.Size(180, 53)
         Me.Doc_updt.TabIndex = 2
         Me.Doc_updt.Text = "Update"
         Me.Doc_updt.UseVisualStyleBackColor = True
@@ -103,10 +103,10 @@ Partial Class Home
         'Doc_add
         '
         Me.Doc_add.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Doc_add.Location = New System.Drawing.Point(8, 15)
-        Me.Doc_add.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Doc_add.Location = New System.Drawing.Point(11, 18)
+        Me.Doc_add.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Doc_add.Name = "Doc_add"
-        Me.Doc_add.Size = New System.Drawing.Size(135, 43)
+        Me.Doc_add.Size = New System.Drawing.Size(180, 53)
         Me.Doc_add.TabIndex = 1
         Me.Doc_add.Text = "Add"
         Me.Doc_add.UseVisualStyleBackColor = True
@@ -118,11 +118,11 @@ Partial Class Home
         Me.GroupBox2.Controls.Add(Me.Pnt_updt)
         Me.GroupBox2.Controls.Add(Me.Pnt_add)
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(377, 18)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox2.Location = New System.Drawing.Point(503, 22)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox2.Size = New System.Drawing.Size(150, 198)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox2.Size = New System.Drawing.Size(200, 244)
         Me.GroupBox2.TabIndex = 8
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Patient"
@@ -130,10 +130,10 @@ Partial Class Home
         'Pnt_view
         '
         Me.Pnt_view.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Pnt_view.Location = New System.Drawing.Point(8, 147)
-        Me.Pnt_view.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Pnt_view.Location = New System.Drawing.Point(11, 181)
+        Me.Pnt_view.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Pnt_view.Name = "Pnt_view"
-        Me.Pnt_view.Size = New System.Drawing.Size(135, 43)
+        Me.Pnt_view.Size = New System.Drawing.Size(180, 53)
         Me.Pnt_view.TabIndex = 4
         Me.Pnt_view.Text = "View"
         Me.Pnt_view.UseVisualStyleBackColor = True
@@ -141,10 +141,10 @@ Partial Class Home
         'Pnt_del
         '
         Me.Pnt_del.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Pnt_del.Location = New System.Drawing.Point(8, 103)
-        Me.Pnt_del.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Pnt_del.Location = New System.Drawing.Point(11, 127)
+        Me.Pnt_del.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Pnt_del.Name = "Pnt_del"
-        Me.Pnt_del.Size = New System.Drawing.Size(135, 43)
+        Me.Pnt_del.Size = New System.Drawing.Size(180, 53)
         Me.Pnt_del.TabIndex = 3
         Me.Pnt_del.Text = "Delete"
         Me.Pnt_del.UseVisualStyleBackColor = True
@@ -152,10 +152,10 @@ Partial Class Home
         'Pnt_updt
         '
         Me.Pnt_updt.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Pnt_updt.Location = New System.Drawing.Point(8, 59)
-        Me.Pnt_updt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Pnt_updt.Location = New System.Drawing.Point(11, 73)
+        Me.Pnt_updt.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Pnt_updt.Name = "Pnt_updt"
-        Me.Pnt_updt.Size = New System.Drawing.Size(135, 43)
+        Me.Pnt_updt.Size = New System.Drawing.Size(180, 53)
         Me.Pnt_updt.TabIndex = 2
         Me.Pnt_updt.Text = "Update"
         Me.Pnt_updt.UseVisualStyleBackColor = True
@@ -163,10 +163,10 @@ Partial Class Home
         'Pnt_add
         '
         Me.Pnt_add.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Pnt_add.Location = New System.Drawing.Point(8, 15)
-        Me.Pnt_add.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Pnt_add.Location = New System.Drawing.Point(11, 18)
+        Me.Pnt_add.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Pnt_add.Name = "Pnt_add"
-        Me.Pnt_add.Size = New System.Drawing.Size(135, 43)
+        Me.Pnt_add.Size = New System.Drawing.Size(180, 53)
         Me.Pnt_add.TabIndex = 1
         Me.Pnt_add.Text = "Add"
         Me.Pnt_add.UseVisualStyleBackColor = True
@@ -174,10 +174,10 @@ Partial Class Home
         'all_apmt
         '
         Me.all_apmt.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.all_apmt.Location = New System.Drawing.Point(168, 148)
-        Me.all_apmt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.all_apmt.Location = New System.Drawing.Point(224, 186)
+        Me.all_apmt.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.all_apmt.Name = "all_apmt"
-        Me.all_apmt.Size = New System.Drawing.Size(210, 68)
+        Me.all_apmt.Size = New System.Drawing.Size(280, 83)
         Me.all_apmt.TabIndex = 9
         Me.all_apmt.Text = "View All Appointments"
         Me.all_apmt.UseCompatibleTextRendering = True
@@ -186,10 +186,10 @@ Partial Class Home
         'new_apmt
         '
         Me.new_apmt.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.new_apmt.Location = New System.Drawing.Point(168, 18)
-        Me.new_apmt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.new_apmt.Location = New System.Drawing.Point(224, 22)
+        Me.new_apmt.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.new_apmt.Name = "new_apmt"
-        Me.new_apmt.Size = New System.Drawing.Size(210, 68)
+        Me.new_apmt.Size = New System.Drawing.Size(280, 83)
         Me.new_apmt.TabIndex = 10
         Me.new_apmt.Text = "Book New Appointment"
         Me.new_apmt.UseCompatibleTextRendering = True
@@ -199,25 +199,26 @@ Partial Class Home
         '
         Me.fin_apmt.BackColor = System.Drawing.SystemColors.Control
         Me.fin_apmt.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fin_apmt.Location = New System.Drawing.Point(168, 83)
+        Me.fin_apmt.Location = New System.Drawing.Point(224, 104)
+        Me.fin_apmt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.fin_apmt.Name = "fin_apmt"
-        Me.fin_apmt.Size = New System.Drawing.Size(210, 68)
+        Me.fin_apmt.Size = New System.Drawing.Size(280, 83)
         Me.fin_apmt.TabIndex = 11
         Me.fin_apmt.Text = "Close Appointment"
         Me.fin_apmt.UseVisualStyleBackColor = False
         '
         'Home
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(626, 311)
+        Me.ClientSize = New System.Drawing.Size(835, 383)
         Me.Controls.Add(Me.fin_apmt)
         Me.Controls.Add(Me.new_apmt)
         Me.Controls.Add(Me.all_apmt)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.logout_btn)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Home"
         Me.Text = "Home"
         Me.GroupBox1.ResumeLayout(False)
