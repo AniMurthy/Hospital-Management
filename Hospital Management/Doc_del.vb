@@ -3,7 +3,7 @@
 Public Class Doc_del
     Private Sub Doc_del_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'HospitalDataSet1.Doctor' table. You can move, or remove it, as needed.
-        Me.DoctorTableAdapter.Fill(Me.HospitalDataSet1.Doctor)
+        Me.DoctorTableAdapter.Fill(Me.HospitalDataSet.Doctor)
 
     End Sub
 
@@ -18,7 +18,7 @@ Public Class Doc_del
     Private Sub del_rec_Click(sender As Object, e As EventArgs) Handles del_rec.Click
         Dim ids As New List(Of Integer)
         For Each row As DataGridViewRow In DataGridView1.Rows
-            Console.WriteLine(row)
+            'Console.WriteLine(row)
             Dim checkbox As DataGridViewCheckBoxCell = CType(row.Cells(0), DataGridViewCheckBoxCell)
             If CBool(checkbox.Value) = True Then
                 ids.Add(CInt(row.Cells(1).Value))

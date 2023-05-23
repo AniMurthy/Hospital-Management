@@ -24,9 +24,9 @@ Partial Class Doc_del
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.HospitalDataSet1 = New Hospital_Management.HospitalDataSet1()
+        Me.HospitalDataSet = New Hospital_Management.HospitalDataSet()
         Me.DoctorBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DoctorTableAdapter = New Hospital_Management.HospitalDataSet1TableAdapters.DoctorTableAdapter()
+        Me.DoctorTableAdapter = New Hospital_Management.HospitalDataSetTableAdapters.DoctorTableAdapter()
         Me.bck_btn = New System.Windows.Forms.Button()
         Me.del_rec = New System.Windows.Forms.Button()
         Me.del = New System.Windows.Forms.DataGridViewCheckBoxColumn()
@@ -40,7 +40,7 @@ Partial Class Doc_del
         Me.EmailIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SalaryDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.HospitalDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HospitalDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DoctorBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -60,13 +60,13 @@ Partial Class Doc_del
         '
         'HospitalDataSet1
         '
-        Me.HospitalDataSet1.DataSetName = "HospitalDataSet1"
-        Me.HospitalDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.HospitalDataSet.DataSetName = "HospitalDataSet1"
+        Me.HospitalDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'DoctorBindingSource
         '
         Me.DoctorBindingSource.DataMember = "Doctor"
-        Me.DoctorBindingSource.DataSource = Me.HospitalDataSet1
+        Me.DoctorBindingSource.DataSource = Me.HospitalDataSet
         '
         'DoctorTableAdapter
         '
@@ -181,16 +181,16 @@ Partial Class Doc_del
         Me.Name = "Doc_del"
         Me.Text = "Doc_del"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.HospitalDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HospitalDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DoctorBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents HospitalDataSet1 As HospitalDataSet1
+    Friend WithEvents HospitalDataSet As HospitalDataSet
     Friend WithEvents DoctorBindingSource As BindingSource
-    Friend WithEvents DoctorTableAdapter As HospitalDataSet1TableAdapters.DoctorTableAdapter
+    Friend WithEvents DoctorTableAdapter As HospitalDataSetTableAdapters.DoctorTableAdapter
     Friend WithEvents bck_btn As Button
     Friend WithEvents del_rec As Button
     Friend WithEvents del As DataGridViewCheckBoxColumn
