@@ -180,9 +180,9 @@
       <DependentUpon>HospitalDataSet.xsd</DependentUpon>
     </None>
     <None Include="HospitalDataSet.xsd">
+      <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>HospitalDataSet.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
     </None>
     <None Include="HospitalDataSet.xss">
       <DependentUpon>HospitalDataSet.xsd</DependentUpon>
