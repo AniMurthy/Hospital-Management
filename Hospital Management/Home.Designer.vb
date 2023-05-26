@@ -200,7 +200,7 @@ Partial Class Home
         Me.fin_apmt.BackColor = System.Drawing.SystemColors.Control
         Me.fin_apmt.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.fin_apmt.Location = New System.Drawing.Point(224, 104)
-        Me.fin_apmt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.fin_apmt.Margin = New System.Windows.Forms.Padding(4)
         Me.fin_apmt.Name = "fin_apmt"
         Me.fin_apmt.Size = New System.Drawing.Size(280, 83)
         Me.fin_apmt.TabIndex = 11

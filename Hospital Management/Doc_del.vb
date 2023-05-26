@@ -29,7 +29,7 @@ Public Class Doc_del
             MessageBox.Show("Please select record to delete")
         Else
             For Each num As Integer In ids
-                Dim conn As New SqlConnection("Data Source=LAPTOP-C6S94HN4;Initial Catalog=Hospital;Integrated Security=True")
+                Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
                 Dim cmd As New SqlCommand("Delete from Doctor Where DocID = @val", conn)
                 cmd.Parameters.AddWithValue("@val", num)
                 conn.Open()

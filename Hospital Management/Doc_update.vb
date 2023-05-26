@@ -1,43 +1,45 @@
 ﻿Imports System.Data.SqlClient
-Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
-Public Class Pnt_update
-    Private Sub Pnt_update_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'HospitalDataSet.Patients' table. You can move, or remove it, as needed.
-        Me.PatientsTableAdapter.Fill(Me.HospitalDataSet.Patients)
+Public Class Doc_update
+    Private Sub Doc_update_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'HospitalDataSet.Doctor' table. You can move, or remove it, as needed.
+        Me.DoctorTableAdapter.Fill(Me.HospitalDataSet.Doctor)
 
     End Sub
     Dim id As Integer
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
         If e.ColumnIndex = 0 AndAlso e.RowIndex >= 0 Then
             id = DataGridView1.Rows(e.RowIndex).Cells(1).Value
-            pnt_name_txt.Text = DataGridView1.Rows(e.RowIndex).Cells(2).Value
-            pnt_gen_txt.Text = DataGridView1.Rows(e.RowIndex).Cells(3).Value
-            pnt_age_txt.Text = DataGridView1.Rows(e.RowIndex).Cells(4).Value
-            pnt_address_txt.Text = DataGridView1.Rows(e.RowIndex).Cells(5).Value
-            pnt_num_txt.Text = DataGridView1.Rows(e.RowIndex).Cells(6).Value
-            'MessageBox.Show(a)
-            ' You can access the row and column values using e.RowIndex and e.ColumnIndex
-            ' For example, you can retrieve the clicked cell value using dataGridView1.Rows(e.RowIndex).Cells(e.ColumnIndex).Value
-            ' Perform the desired actions based on the clicked button
+            name_txt.Text = DataGridView1.Rows(e.RowIndex).Cells(2).Value
+            gen_txt.Text = DataGridView1.Rows(e.RowIndex).Cells(3).Value
+            age_txt.Text = DataGridView1.Rows(e.RowIndex).Cells(4).Value
+            spl_txt.Text = DataGridView1.Rows(e.RowIndex).Cells(5).Value
+            qual_txt.Text = DataGridView1.Rows(e.RowIndex).Cells(6).Value
+            contact_txt.Text = DataGridView1.Rows(e.RowIndex).Cells(7).Value
+            email_txt.Text = DataGridView1.Rows(e.RowIndex).Cells(8).Value
+            sal_txt.Text = DataGridView1.Rows(e.RowIndex).Cells(9).Value
         End If
+
     End Sub
 
-    Private Sub update_pnt_Click(sender As Object, e As EventArgs) Handles update_pnt.Click
+    Private Sub updt_btn_Click(sender As Object, e As EventArgs) Handles updt_btn.Click
         Dim chk As Integer
-        If pnt_gen_txt.Text = "M" Or pnt_gen_txt.Text = "F" Then
-            If Integer.TryParse(pnt_age_txt.Text, chk) Then
-                If pnt_num_txt.Text.Length = 10 Then
+        If gen_txt.Text = "M" Or gen_txt.Text = "F" Then
+            If Integer.TryParse(age_txt.Text, chk) Then
+                If contact_txt.Text.Length = 10 Then
                     'Esatblish Connection
                     Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
                     'Dim cmd As New SqlCommand("Insert Into Patients (PatientName,Gender,Age,Address,ContactNumber) Values(@name,@gen,@age,@addr,@num)", conn)
-                    Dim cmd As New SqlCommand("UPDATE Patients SET PatientName = @name, Gender = @gen, Age = @age ,Address = @addr,ContactNumber = @num WHERE  PatientID = @id", conn)
+                    Dim cmd As New SqlCommand("UPDATE DOctor SET DocName = @name, Gender = @gen, Age = @age ,Specialisation = @spl,Qualification = @qual, ContactNumber = @contact, EmailID = @email,Salary = @sal Where DocID = @id", conn)
                     cmd.Parameters.AddWithValue("@id", id)
-                    cmd.Parameters.AddWithValue("@name", pnt_name_txt.Text)
-                    cmd.Parameters.AddWithValue("@gen", pnt_gen_txt.Text)
-                    cmd.Parameters.AddWithValue("@age", Integer.Parse(pnt_age_txt.Text))
-                    cmd.Parameters.AddWithValue("@addr", pnt_address_txt.Text)
-                    cmd.Parameters.AddWithValue("@num", pnt_num_txt.Text)
+                    cmd.Parameters.AddWithValue("@name", name_txt.Text)
+                    cmd.Parameters.AddWithValue("@gen", gen_txt.Text)
+                    cmd.Parameters.AddWithValue("@age", Integer.Parse(age_txt.Text))
+                    cmd.Parameters.AddWithValue("@spl", spl_txt.Text)
+                    cmd.Parameters.AddWithValue("@qual", qual_txt.Text)
+                    cmd.Parameters.AddWithValue("@contact", contact_txt.Text)
+                    cmd.Parameters.AddWithValue("@email", email_txt.Text)
+                    cmd.Parameters.AddWithValue("@sal", sal_txt.Text)
 
                     conn.Open()
                     Dim Res As Integer = cmd.ExecuteNonQuery()

@@ -4,7 +4,7 @@ Public Class Login
     Dim username, password As String
 
     Private Sub login_btn_Click(sender As Object, e As EventArgs) Handles login_btn.Click
-        Dim conn As New SqlConnection("Data Source=LAPTOP-C6S94HN4;Initial Catalog=Hospital;Integrated Security=True")
+        Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
         Dim cmd As New SqlCommand("Select Username , Password from Users where Username = @username and Password = @password", conn)
         conn.Open()
         username = username_text.Text

@@ -40,12 +40,18 @@ Public Class Home
     End Sub
 
     Private Sub Doc_updt_Click(sender As Object, e As EventArgs) Handles Doc_updt.Click
-
+        Dim doc_updt As New Doc_update
+        doc_updt.Show()
+        Me.Hide()
     End Sub
 
     Private Sub Pnt_updt_Click(sender As Object, e As EventArgs) Handles Pnt_updt.Click
         Dim pnt_updt As New Pnt_update
         pnt_updt.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub Doc_add_Click(sender As Object, e As EventArgs) Handles Doc_add.Click
+
     End Sub
 End Class

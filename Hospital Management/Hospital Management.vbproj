@@ -73,10 +73,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Doc_add.Designer.vb">
+      <DependentUpon>Doc_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Doc_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Doc_del.Designer.vb">
       <DependentUpon>Doc_del.vb</DependentUpon>
     </Compile>
     <Compile Include="Doc_del.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doc_update.Designer.vb">
+      <DependentUpon>Doc_update.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Doc_update.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Doc_view.Designer.vb">
@@ -146,6 +158,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Doc_del.resx">
       <DependentUpon>Doc_del.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doc_update.resx">
+      <DependentUpon>Doc_update.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Doc_view.resx">
       <DependentUpon>Doc_view.vb</DependentUpon>
