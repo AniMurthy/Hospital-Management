@@ -36,6 +36,9 @@ Partial Class Home
         Me.all_apmt = New System.Windows.Forms.Button()
         Me.new_apmt = New System.Windows.Forms.Button()
         Me.fin_apmt = New System.Windows.Forms.Button()
+        Me.add_user = New System.Windows.Forms.Button()
+        Me.updt_admin = New System.Windows.Forms.Button()
+        Me.del_admin = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -207,11 +210,41 @@ Partial Class Home
         Me.fin_apmt.Text = "Close Appointment"
         Me.fin_apmt.UseVisualStyleBackColor = False
         '
+        'add_user
+        '
+        Me.add_user.Location = New System.Drawing.Point(6, 318)
+        Me.add_user.Name = "add_user"
+        Me.add_user.Size = New System.Drawing.Size(204, 53)
+        Me.add_user.TabIndex = 12
+        Me.add_user.Text = "Add New Admin"
+        Me.add_user.UseVisualStyleBackColor = True
+        '
+        'updt_admin
+        '
+        Me.updt_admin.Location = New System.Drawing.Point(216, 318)
+        Me.updt_admin.Name = "updt_admin"
+        Me.updt_admin.Size = New System.Drawing.Size(204, 53)
+        Me.updt_admin.TabIndex = 13
+        Me.updt_admin.Text = "Update Admin"
+        Me.updt_admin.UseVisualStyleBackColor = True
+        '
+        'del_admin
+        '
+        Me.del_admin.Location = New System.Drawing.Point(426, 318)
+        Me.del_admin.Name = "del_admin"
+        Me.del_admin.Size = New System.Drawing.Size(204, 53)
+        Me.del_admin.TabIndex = 14
+        Me.del_admin.Text = "Delete Admin"
+        Me.del_admin.UseVisualStyleBackColor = True
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(835, 383)
+        Me.ClientSize = New System.Drawing.Size(852, 383)
+        Me.Controls.Add(Me.del_admin)
+        Me.Controls.Add(Me.updt_admin)
+        Me.Controls.Add(Me.add_user)
         Me.Controls.Add(Me.fin_apmt)
         Me.Controls.Add(Me.new_apmt)
         Me.Controls.Add(Me.all_apmt)
@@ -240,4 +273,7 @@ Partial Class Home
     Friend WithEvents all_apmt As Button
     Friend WithEvents new_apmt As Button
     Friend WithEvents fin_apmt As Button
+    Friend WithEvents add_user As Button
+    Friend WithEvents updt_admin As Button
+    Friend WithEvents del_admin As Button
 End Class

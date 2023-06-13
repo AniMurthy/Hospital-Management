@@ -52,6 +52,8 @@ Public Class Home
     End Sub
 
     Private Sub Doc_add_Click(sender As Object, e As EventArgs) Handles Doc_add.Click
-
+        Dim doc_add As New Doc_add
+        doc_add.Show()
+        Me.Hide()
     End Sub
 End Class

@@ -156,6 +156,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Doc_add.resx">
+      <DependentUpon>Doc_add.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Doc_del.resx">
       <DependentUpon>Doc_del.vb</DependentUpon>
     </EmbeddedResource>
