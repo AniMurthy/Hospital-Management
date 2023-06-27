@@ -30,7 +30,7 @@ Public Class Doc_update
                     'Esatblish Connection
                     Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
                     'Dim cmd As New SqlCommand("Insert Into Patients (PatientName,Gender,Age,Address,ContactNumber) Values(@name,@gen,@age,@addr,@num)", conn)
-                    Dim cmd As New SqlCommand("UPDATE DOctor SET DocName = @name, Gender = @gen, Age = @age ,Specialisation = @spl,Qualification = @qual, ContactNumber = @contact, EmailID = @email,Salary = @sal Where DocID = @id", conn)
+                    Dim cmd As New SqlCommand("UPDATE Doctor SET DocName = @name, Gender = @gen, Age = @age ,Specialisation = @spl,Qualification = @qual, ContactNumber = @contact, EmailID = @email,Salary = @sal Where DocID = @id", conn)
                     cmd.Parameters.AddWithValue("@id", id)
                     cmd.Parameters.AddWithValue("@name", name_txt.Text)
                     cmd.Parameters.AddWithValue("@gen", gen_txt.Text)

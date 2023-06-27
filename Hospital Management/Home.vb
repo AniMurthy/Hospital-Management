@@ -56,4 +56,10 @@ Public Class Home
         doc_add.Show()
         Me.Hide()
     End Sub
+
+    Private Sub new_apmt_Click(sender As Object, e As EventArgs) Handles new_apmt.Click
+        Dim appt_add As New appt_add
+        appt_add.Show()
+        Me.Hide()
+    End Sub
 End Class
