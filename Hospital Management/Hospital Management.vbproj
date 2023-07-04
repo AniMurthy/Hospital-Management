@@ -160,6 +160,12 @@
     <Compile Include="Pnt_view.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="View_appt.Designer.vb">
+      <DependentUpon>View_appt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View_appt.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="appt_add.resx">
@@ -200,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pnt_view.resx">
       <DependentUpon>Pnt_view.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_appt.resx">
+      <DependentUpon>View_appt.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
