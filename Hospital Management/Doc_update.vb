@@ -8,6 +8,7 @@ Public Class Doc_update
     End Sub
     Dim id As Integer
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+        'Get values form table
         If e.ColumnIndex = 0 AndAlso e.RowIndex >= 0 Then
             id = DataGridView1.Rows(e.RowIndex).Cells(1).Value
             name_txt.Text = DataGridView1.Rows(e.RowIndex).Cells(2).Value
@@ -24,12 +25,12 @@ Public Class Doc_update
 
     Private Sub updt_btn_Click(sender As Object, e As EventArgs) Handles updt_btn.Click
         Dim chk As Integer
+        'Security check
         If gen_txt.Text = "M" Or gen_txt.Text = "F" Then
             If Integer.TryParse(age_txt.Text, chk) Then
                 If contact_txt.Text.Length = 10 Then
                     'Esatblish Connection
-                    Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
-                    'Dim cmd As New SqlCommand("Insert Into Patients (PatientName,Gender,Age,Address,ContactNumber) Values(@name,@gen,@age,@addr,@num)", conn)
+                    Dim conn As New SqlConnection("Data Source=LAPTOP-C6S94HN4;Initial Catalog=Hospital;Integrated Security=True")
                     Dim cmd As New SqlCommand("UPDATE Doctor SET DocName = @name, Gender = @gen, Age = @age ,Specialisation = @spl,Qualification = @qual, ContactNumber = @contact, EmailID = @email,Salary = @sal Where DocID = @id", conn)
                     cmd.Parameters.AddWithValue("@id", id)
                     cmd.Parameters.AddWithValue("@name", name_txt.Text)
@@ -66,6 +67,7 @@ Public Class Doc_update
     End Sub
 
     Private Sub bck_btn_Click(sender As Object, e As EventArgs) Handles bck_btn.Click
+        'Go to previous form
         Dim previousform As Form = Application.OpenForms.OfType(Of Home)().FirstOrDefault()
         If previousform IsNot Nothing Then
             previousform.Show()

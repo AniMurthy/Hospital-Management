@@ -79,6 +79,12 @@
     <Compile Include="appt_add.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="appt_del.Designer.vb">
+      <DependentUpon>appt_del.vb</DependentUpon>
+    </Compile>
+    <Compile Include="appt_del.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Doc_add.Designer.vb">
       <DependentUpon>Doc_add.vb</DependentUpon>
     </Compile>
@@ -170,6 +176,9 @@
   <ItemGroup>
     <EmbeddedResource Include="appt_add.resx">
       <DependentUpon>appt_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appt_del.resx">
+      <DependentUpon>appt_del.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Doc_add.resx">
       <DependentUpon>Doc_add.vb</DependentUpon>

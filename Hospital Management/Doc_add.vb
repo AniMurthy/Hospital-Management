@@ -2,6 +2,7 @@
 
 Public Class Doc_add
     Private Sub bck_btn_Click(sender As Object, e As EventArgs) Handles bck_btn.Click
+        'Go back to previous form
         Dim previousform As Form = Application.OpenForms.OfType(Of Home)().FirstOrDefault()
         If previousform IsNot Nothing Then
             previousform.Show()
@@ -12,9 +13,11 @@ Public Class Doc_add
     Dim d_name, gen, specialisation, qualification, email, contact As String
 
     Private Sub add_doc_Click(sender As Object, e As EventArgs) Handles add_doc.Click
+        'Check if any field is empty
         If age_txt.Text = "" Or sal_txt.Text = "" Or name_txt.Text = "" Or gen_txt.Text = "" Or spl_txt.Text = "" Or qual_txt.Text = "" Or email_txt.Text = "" Or contact_txt.Text = "" Then
             MessageBox.Show("Do Not Leave any field empty")
         Else
+            'If not, assign the values
             age = age_txt.Text
             sal = sal_txt.Text
             d_name = name_txt.Text
@@ -24,11 +27,12 @@ Public Class Doc_add
             email = email_txt.Text
             contact = contact_txt.Text
 
+            'Security check to prevent unwanted values
             If gen = "M" Or gen = "F" Then
                 If Integer.TryParse(age, chk) Then
                     If Integer.TryParse(sal, chk) Then
                         If contact.Length = 10 Then
-                            Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
+                            Dim conn As New SqlConnection("Data Source=LAPTOP-C6S94HN4;Initial Catalog=Hospital;Integrated Security=True")
                             Dim cmd As New SqlCommand("Insert Into Doctor (DocName,Gender,Age,EmailID,Qualification,Specialisation,ContactNumber,Salary) Values(@name,@gen,@age,@email,@qual,@spl,@contact,@sal)", conn)
                             cmd.Parameters.AddWithValue("@name", Name)
                             cmd.Parameters.AddWithValue("@gen", gen)

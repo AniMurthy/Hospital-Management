@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class View_appt
+Partial Class appt_del
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -24,55 +24,74 @@ Partial Class View_appt
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.bck_btn = New System.Windows.Forms.Button()
-        Me.HospitalDataSet = New Hospital_Management.HospitalDataSet()
         Me.AppointmentsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.HospitalDataSet = New Hospital_Management.HospitalDataSet()
+        Me.bck_btn = New System.Windows.Forms.Button()
         Me.AppointmentsTableAdapter = New Hospital_Management.HospitalDataSetTableAdapters.AppointmentsTableAdapter()
+        Me.del_rec = New System.Windows.Forms.Button()
+        Me.del = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.AptIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.StatusDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AppointmentTimeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PntIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DOCIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AppointmentTimeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.StatusDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.HospitalDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AppointmentsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HospitalDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
         '
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.AptIDDataGridViewTextBoxColumn, Me.PntIDDataGridViewTextBoxColumn, Me.DOCIDDataGridViewTextBoxColumn, Me.AppointmentTimeDataGridViewTextBoxColumn, Me.StatusDataGridViewTextBoxColumn})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.del, Me.AptIDDataGridViewTextBoxColumn, Me.StatusDataGridViewTextBoxColumn, Me.AppointmentTimeDataGridViewTextBoxColumn, Me.PntIDDataGridViewTextBoxColumn, Me.DOCIDDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.AppointmentsBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(27, 51)
+        Me.DataGridView1.Location = New System.Drawing.Point(34, 42)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 62
         Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(927, 415)
+        Me.DataGridView1.Size = New System.Drawing.Size(1301, 356)
         Me.DataGridView1.TabIndex = 0
-        '
-        'bck_btn
-        '
-        Me.bck_btn.Location = New System.Drawing.Point(1015, 51)
-        Me.bck_btn.Name = "bck_btn"
-        Me.bck_btn.Size = New System.Drawing.Size(136, 57)
-        Me.bck_btn.TabIndex = 1
-        Me.bck_btn.Text = "Back"
-        Me.bck_btn.UseVisualStyleBackColor = True
-        '
-        'HospitalDataSet
-        '
-        Me.HospitalDataSet.DataSetName = "HospitalDataSet"
-        Me.HospitalDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'AppointmentsBindingSource
         '
         Me.AppointmentsBindingSource.DataMember = "Appointments"
         Me.AppointmentsBindingSource.DataSource = Me.HospitalDataSet
         '
+        'HospitalDataSet
+        '
+        Me.HospitalDataSet.DataSetName = "HospitalDataSet"
+        Me.HospitalDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'bck_btn
+        '
+        Me.bck_btn.Location = New System.Drawing.Point(1341, 42)
+        Me.bck_btn.Name = "bck_btn"
+        Me.bck_btn.Size = New System.Drawing.Size(204, 89)
+        Me.bck_btn.TabIndex = 1
+        Me.bck_btn.Text = "Back"
+        Me.bck_btn.UseVisualStyleBackColor = True
+        '
         'AppointmentsTableAdapter
         '
         Me.AppointmentsTableAdapter.ClearBeforeFill = True
+        '
+        'del_rec
+        '
+        Me.del_rec.Location = New System.Drawing.Point(1341, 294)
+        Me.del_rec.Name = "del_rec"
+        Me.del_rec.Size = New System.Drawing.Size(204, 84)
+        Me.del_rec.TabIndex = 2
+        Me.del_rec.Text = "Delete"
+        Me.del_rec.UseVisualStyleBackColor = True
+        '
+        'del
+        '
+        Me.del.HeaderText = "Delete Appointment"
+        Me.del.MinimumWidth = 8
+        Me.del.Name = "del"
+        Me.del.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.del.Width = 150
         '
         'AptIDDataGridViewTextBoxColumn
         '
@@ -82,6 +101,22 @@ Partial Class View_appt
         Me.AptIDDataGridViewTextBoxColumn.Name = "AptIDDataGridViewTextBoxColumn"
         Me.AptIDDataGridViewTextBoxColumn.ReadOnly = True
         Me.AptIDDataGridViewTextBoxColumn.Width = 150
+        '
+        'StatusDataGridViewTextBoxColumn
+        '
+        Me.StatusDataGridViewTextBoxColumn.DataPropertyName = "Status"
+        Me.StatusDataGridViewTextBoxColumn.HeaderText = "Status"
+        Me.StatusDataGridViewTextBoxColumn.MinimumWidth = 8
+        Me.StatusDataGridViewTextBoxColumn.Name = "StatusDataGridViewTextBoxColumn"
+        Me.StatusDataGridViewTextBoxColumn.Width = 150
+        '
+        'AppointmentTimeDataGridViewTextBoxColumn
+        '
+        Me.AppointmentTimeDataGridViewTextBoxColumn.DataPropertyName = "AppointmentTime"
+        Me.AppointmentTimeDataGridViewTextBoxColumn.HeaderText = "AppointmentTime"
+        Me.AppointmentTimeDataGridViewTextBoxColumn.MinimumWidth = 8
+        Me.AppointmentTimeDataGridViewTextBoxColumn.Name = "AppointmentTimeDataGridViewTextBoxColumn"
+        Me.AppointmentTimeDataGridViewTextBoxColumn.Width = 150
         '
         'PntIDDataGridViewTextBoxColumn
         '
@@ -99,34 +134,19 @@ Partial Class View_appt
         Me.DOCIDDataGridViewTextBoxColumn.Name = "DOCIDDataGridViewTextBoxColumn"
         Me.DOCIDDataGridViewTextBoxColumn.Width = 150
         '
-        'AppointmentTimeDataGridViewTextBoxColumn
-        '
-        Me.AppointmentTimeDataGridViewTextBoxColumn.DataPropertyName = "AppointmentTime"
-        Me.AppointmentTimeDataGridViewTextBoxColumn.HeaderText = "AppointmentTime"
-        Me.AppointmentTimeDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.AppointmentTimeDataGridViewTextBoxColumn.Name = "AppointmentTimeDataGridViewTextBoxColumn"
-        Me.AppointmentTimeDataGridViewTextBoxColumn.Width = 150
-        '
-        'StatusDataGridViewTextBoxColumn
-        '
-        Me.StatusDataGridViewTextBoxColumn.DataPropertyName = "Status"
-        Me.StatusDataGridViewTextBoxColumn.HeaderText = "Status"
-        Me.StatusDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.StatusDataGridViewTextBoxColumn.Name = "StatusDataGridViewTextBoxColumn"
-        Me.StatusDataGridViewTextBoxColumn.Width = 150
-        '
-        'View_appt
+        'appt_del
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1199, 743)
+        Me.ClientSize = New System.Drawing.Size(1557, 726)
+        Me.Controls.Add(Me.del_rec)
         Me.Controls.Add(Me.bck_btn)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Name = "View_appt"
-        Me.Text = "View_appt"
+        Me.Name = "appt_del"
+        Me.Text = "appt_del"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.HospitalDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AppointmentsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HospitalDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -136,9 +156,11 @@ Partial Class View_appt
     Friend WithEvents HospitalDataSet As HospitalDataSet
     Friend WithEvents AppointmentsBindingSource As BindingSource
     Friend WithEvents AppointmentsTableAdapter As HospitalDataSetTableAdapters.AppointmentsTableAdapter
+    Friend WithEvents del_rec As Button
+    Friend WithEvents del As DataGridViewCheckBoxColumn
     Friend WithEvents AptIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents StatusDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents AppointmentTimeDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents PntIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents DOCIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents AppointmentTimeDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents StatusDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
 End Class

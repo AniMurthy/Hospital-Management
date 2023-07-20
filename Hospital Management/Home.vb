@@ -62,4 +62,16 @@ Public Class Home
         appt_add.Show()
         Me.Hide()
     End Sub
+
+    Private Sub fin_apmt_Click(sender As Object, e As EventArgs) Handles fin_apmt.Click
+        Dim appt_del As New appt_del
+        appt_del.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub all_apmt_Click(sender As Object, e As EventArgs) Handles all_apmt.Click
+        Dim appt_view As New View_appt
+        appt_view.Show()
+        Me.Hide()
+    End Sub
 End Class

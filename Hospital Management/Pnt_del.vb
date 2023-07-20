@@ -5,17 +5,12 @@ Public Class Pnt_del
     Private Sub Pnt_del_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'HospitalDataSet.Patients' table. You can move, or remove it, as needed.
         Me.PatientsTableAdapter.Fill(Me.HospitalDataSet.Patients)
-        'TODO: This line of code loads data into the 'HospitalDataSet1.Patients' table. You can move, or remove it, as needed.
-        'Me.PatientsTableAdapter1.Fill(Me.HospitalDataSet1.Patients)
-        'TODO: This line of code loads data into the 'HospitalDataSet.Patients' table. You can move, or remove it, as needed.
-        Me.PatientsTableAdapter.Fill(Me.HospitalDataSet.Patients)
 
     End Sub
 
     Private Sub del_rec_Click(sender As Object, e As EventArgs) Handles del_rec.Click
         Dim ids As New List(Of Integer)
         For Each row As DataGridViewRow In DataGridView1.Rows
-            Console.WriteLine(row)
             Dim checkbox As DataGridViewCheckBoxCell = CType(row.Cells(6), DataGridViewCheckBoxCell)
             If CBool(checkbox.Value) = True Then
                 ids.Add(CInt(row.Cells(0).Value))
@@ -26,14 +21,14 @@ Public Class Pnt_del
             MessageBox.Show("Please select record to delete")
         Else
             For Each num As Integer In ids
-                Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
+                Dim conn As New SqlConnection("Data Source=LAPTOP-C6S94HN4;Initial Catalog=Hospital;Integrated Security=True")
                 Dim cmd As New SqlCommand("Delete from Patients Where PatientID = @val", conn)
                 cmd.Parameters.AddWithValue("@val", num)
                 conn.Open()
                 Dim schemaTable As DataTable = conn.GetSchema("Columns", New String() {Nothing, Nothing, "Patients"})
                 For Each row As DataRow In schemaTable.Rows
                     Dim columnName As String = row("COLUMN_NAME").ToString()
-                    'Console.WriteLine(columnName)
+
                 Next
                 cmd.ExecuteNonQuery()
                 conn.Close()

@@ -1,3 +1,15 @@
 ﻿Public Class View_appt
+    Private Sub View_appt_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'HospitalDataSet.Appointments' table. You can move, or remove it, as needed.
+        Me.AppointmentsTableAdapter.Fill(Me.HospitalDataSet.Appointments)
 
+    End Sub
+
+    Private Sub bck_btn_Click(sender As Object, e As EventArgs) Handles bck_btn.Click
+        Dim previousform As Form = Application.OpenForms.OfType(Of Home)().FirstOrDefault()
+        If previousform IsNot Nothing Then
+            previousform.Show()
+        End If
+        Me.Close()
+    End Sub
 End Class
