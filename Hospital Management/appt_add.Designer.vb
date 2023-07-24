@@ -46,6 +46,7 @@ Partial Class appt_add
         Me.Label5 = New System.Windows.Forms.Label()
         Me.PatientsTableAdapter = New Hospital_Management.HospitalDataSetTableAdapters.PatientsTableAdapter()
         Me.DoctorTableAdapter = New Hospital_Management.HospitalDataSetTableAdapters.DoctorTableAdapter()
+        Me.bck_btn = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PatientsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.HospitalDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,6 +57,7 @@ Partial Class appt_add
         'DataGridView1
         '
         Me.DataGridView1.AutoGenerateColumns = False
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.pnt_select, Me.PatientIDDataGridViewTextBoxColumn, Me.PatientNameDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.PatientsBindingSource
@@ -72,7 +74,7 @@ Partial Class appt_add
         Me.pnt_select.HeaderText = "Select"
         Me.pnt_select.MinimumWidth = 6
         Me.pnt_select.Name = "pnt_select"
-        Me.pnt_select.Width = 125
+        Me.pnt_select.Width = 60
         '
         'PatientIDDataGridViewTextBoxColumn
         '
@@ -81,7 +83,7 @@ Partial Class appt_add
         Me.PatientIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.PatientIDDataGridViewTextBoxColumn.Name = "PatientIDDataGridViewTextBoxColumn"
         Me.PatientIDDataGridViewTextBoxColumn.ReadOnly = True
-        Me.PatientIDDataGridViewTextBoxColumn.Width = 125
+        Me.PatientIDDataGridViewTextBoxColumn.Width = 112
         '
         'PatientNameDataGridViewTextBoxColumn
         '
@@ -89,7 +91,7 @@ Partial Class appt_add
         Me.PatientNameDataGridViewTextBoxColumn.HeaderText = "PatientName"
         Me.PatientNameDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.PatientNameDataGridViewTextBoxColumn.Name = "PatientNameDataGridViewTextBoxColumn"
-        Me.PatientNameDataGridViewTextBoxColumn.Width = 125
+        Me.PatientNameDataGridViewTextBoxColumn.Width = 137
         '
         'PatientsBindingSource
         '
@@ -185,6 +187,7 @@ Partial Class appt_add
         Me.PntID_txt.Location = New System.Drawing.Point(54, 388)
         Me.PntID_txt.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PntID_txt.Name = "PntID_txt"
+        Me.PntID_txt.ReadOnly = True
         Me.PntID_txt.Size = New System.Drawing.Size(160, 26)
         Me.PntID_txt.TabIndex = 5
         '
@@ -193,6 +196,7 @@ Partial Class appt_add
         Me.DocID_txt.Location = New System.Drawing.Point(273, 388)
         Me.DocID_txt.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.DocID_txt.Name = "DocID_txt"
+        Me.DocID_txt.ReadOnly = True
         Me.DocID_txt.Size = New System.Drawing.Size(168, 26)
         Me.DocID_txt.TabIndex = 6
         '
@@ -241,11 +245,21 @@ Partial Class appt_add
         '
         Me.DoctorTableAdapter.ClearBeforeFill = True
         '
+        'bck_btn
+        '
+        Me.bck_btn.Location = New System.Drawing.Point(1359, 44)
+        Me.bck_btn.Name = "bck_btn"
+        Me.bck_btn.Size = New System.Drawing.Size(97, 54)
+        Me.bck_btn.TabIndex = 11
+        Me.bck_btn.Text = "Back"
+        Me.bck_btn.UseVisualStyleBackColor = True
+        '
         'appt_add
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1360, 455)
+        Me.ClientSize = New System.Drawing.Size(1468, 455)
+        Me.Controls.Add(Me.bck_btn)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Add_apt)
@@ -293,4 +307,5 @@ Partial Class appt_add
     Friend WithEvents Add_apt As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents bck_btn As Button
 End Class

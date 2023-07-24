@@ -120,6 +120,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HospitalDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="HospitalDataSet.vb">
+      <DependentUpon>HospitalDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>

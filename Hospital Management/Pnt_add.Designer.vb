@@ -29,20 +29,21 @@ Partial Class Pnt_add
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.pnt_name_txt = New System.Windows.Forms.TextBox()
-        Me.pnt_gen_txt = New System.Windows.Forms.TextBox()
         Me.pnt_age_txt = New System.Windows.Forms.TextBox()
         Me.pnt_address_txt = New System.Windows.Forms.TextBox()
         Me.pnt_num_txt = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.bck_btn = New System.Windows.Forms.Button()
+        Me.gender = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'add_pnt
         '
         Me.add_pnt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.add_pnt.Location = New System.Drawing.Point(99, 337)
+        Me.add_pnt.Location = New System.Drawing.Point(148, 518)
+        Me.add_pnt.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.add_pnt.Name = "add_pnt"
-        Me.add_pnt.Size = New System.Drawing.Size(209, 38)
+        Me.add_pnt.Size = New System.Drawing.Size(314, 58)
         Me.add_pnt.TabIndex = 0
         Me.add_pnt.Text = "Add"
         Me.add_pnt.UseVisualStyleBackColor = True
@@ -51,9 +52,10 @@ Partial Class Pnt_add
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(25, 34)
+        Me.Label1.Location = New System.Drawing.Point(38, 52)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(51, 20)
+        Me.Label1.Size = New System.Drawing.Size(78, 29)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Name"
         '
@@ -61,9 +63,10 @@ Partial Class Pnt_add
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(25, 66)
+        Me.Label2.Location = New System.Drawing.Point(38, 102)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(63, 20)
+        Me.Label2.Size = New System.Drawing.Size(94, 29)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Gender"
         '
@@ -71,9 +74,10 @@ Partial Class Pnt_add
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(25, 98)
+        Me.Label3.Location = New System.Drawing.Point(38, 151)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(38, 20)
+        Me.Label3.Size = New System.Drawing.Size(56, 29)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Age"
         '
@@ -81,9 +85,10 @@ Partial Class Pnt_add
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(25, 130)
+        Me.Label4.Location = New System.Drawing.Point(38, 200)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(68, 20)
+        Me.Label4.Size = New System.Drawing.Size(102, 29)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Address"
         '
@@ -91,84 +96,93 @@ Partial Class Pnt_add
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(25, 231)
+        Me.Label5.Location = New System.Drawing.Point(38, 355)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(125, 20)
+        Me.Label5.Size = New System.Drawing.Size(187, 29)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Contact Number"
         '
         'pnt_name_txt
         '
         Me.pnt_name_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnt_name_txt.Location = New System.Drawing.Point(208, 34)
+        Me.pnt_name_txt.Location = New System.Drawing.Point(312, 52)
+        Me.pnt_name_txt.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.pnt_name_txt.Name = "pnt_name_txt"
-        Me.pnt_name_txt.Size = New System.Drawing.Size(100, 26)
+        Me.pnt_name_txt.Size = New System.Drawing.Size(148, 35)
         Me.pnt_name_txt.TabIndex = 6
-        '
-        'pnt_gen_txt
-        '
-        Me.pnt_gen_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnt_gen_txt.Location = New System.Drawing.Point(208, 66)
-        Me.pnt_gen_txt.Name = "pnt_gen_txt"
-        Me.pnt_gen_txt.Size = New System.Drawing.Size(100, 26)
-        Me.pnt_gen_txt.TabIndex = 7
         '
         'pnt_age_txt
         '
         Me.pnt_age_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnt_age_txt.Location = New System.Drawing.Point(208, 98)
+        Me.pnt_age_txt.Location = New System.Drawing.Point(312, 151)
+        Me.pnt_age_txt.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.pnt_age_txt.Name = "pnt_age_txt"
-        Me.pnt_age_txt.Size = New System.Drawing.Size(100, 26)
+        Me.pnt_age_txt.Size = New System.Drawing.Size(148, 35)
         Me.pnt_age_txt.TabIndex = 8
         '
         'pnt_address_txt
         '
         Me.pnt_address_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnt_address_txt.Location = New System.Drawing.Point(208, 130)
+        Me.pnt_address_txt.Location = New System.Drawing.Point(312, 200)
+        Me.pnt_address_txt.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.pnt_address_txt.Multiline = True
         Me.pnt_address_txt.Name = "pnt_address_txt"
-        Me.pnt_address_txt.Size = New System.Drawing.Size(100, 92)
+        Me.pnt_address_txt.Size = New System.Drawing.Size(148, 139)
         Me.pnt_address_txt.TabIndex = 9
         '
         'pnt_num_txt
         '
         Me.pnt_num_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnt_num_txt.Location = New System.Drawing.Point(208, 228)
+        Me.pnt_num_txt.Location = New System.Drawing.Point(312, 351)
+        Me.pnt_num_txt.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.pnt_num_txt.MaxLength = 10
         Me.pnt_num_txt.Name = "pnt_num_txt"
-        Me.pnt_num_txt.Size = New System.Drawing.Size(100, 26)
+        Me.pnt_num_txt.Size = New System.Drawing.Size(148, 35)
         Me.pnt_num_txt.TabIndex = 10
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(25, 9)
+        Me.Label6.Location = New System.Drawing.Point(38, 14)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(155, 20)
+        Me.Label6.Size = New System.Drawing.Size(230, 29)
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "Enter Patient Details"
         '
         'bck_btn
         '
         Me.bck_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bck_btn.Location = New System.Drawing.Point(334, 5)
+        Me.bck_btn.Location = New System.Drawing.Point(501, 8)
+        Me.bck_btn.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.bck_btn.Name = "bck_btn"
-        Me.bck_btn.Size = New System.Drawing.Size(72, 24)
+        Me.bck_btn.Size = New System.Drawing.Size(108, 37)
         Me.bck_btn.TabIndex = 12
         Me.bck_btn.Text = "Back"
         Me.bck_btn.UseVisualStyleBackColor = True
         '
+        'gender
+        '
+        Me.gender.FormattingEnabled = True
+        Me.gender.Items.AddRange(New Object() {"Male", "Female", "Others"})
+        Me.gender.Location = New System.Drawing.Point(312, 106)
+        Me.gender.Name = "gender"
+        Me.gender.Size = New System.Drawing.Size(148, 28)
+        Me.gender.TabIndex = 43
+        '
         'Pnt_add
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(418, 400)
+        Me.ClientSize = New System.Drawing.Size(627, 615)
+        Me.Controls.Add(Me.gender)
         Me.Controls.Add(Me.bck_btn)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.pnt_num_txt)
         Me.Controls.Add(Me.pnt_address_txt)
         Me.Controls.Add(Me.pnt_age_txt)
-        Me.Controls.Add(Me.pnt_gen_txt)
         Me.Controls.Add(Me.pnt_name_txt)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -176,6 +190,7 @@ Partial Class Pnt_add
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.add_pnt)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Pnt_add"
         Me.Text = "Pnt_add"
         Me.ResumeLayout(False)
@@ -190,10 +205,10 @@ Partial Class Pnt_add
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents pnt_name_txt As TextBox
-    Friend WithEvents pnt_gen_txt As TextBox
     Friend WithEvents pnt_age_txt As TextBox
     Friend WithEvents pnt_address_txt As TextBox
     Friend WithEvents pnt_num_txt As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents bck_btn As Button
+    Friend WithEvents gender As ComboBox
 End Class

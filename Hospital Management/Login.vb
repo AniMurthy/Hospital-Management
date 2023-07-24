@@ -21,7 +21,6 @@ Public Class Login
         If username = "" Or password = "" Then
             MessageBox.Show("Username or password field cannot be empty")
         ElseIf rd.HasRows Then
-            MessageBox.Show("User verified")
             Dim home As New Home
             'Hide current form
             Me.Hide()
@@ -29,6 +28,7 @@ Public Class Login
             home.Show()
         Else
             MessageBox.Show("user not verified")
+            username_text.Focus()
         End If
     End Sub
 End Class

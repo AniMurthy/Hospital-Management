@@ -35,19 +35,19 @@ Public Class Doc_del
                 Dim cmd As New SqlCommand("Delete from Doctor Where DocID = @val", conn)
                 cmd.Parameters.AddWithValue("@val", num)
                 conn.Open()
-                Dim schemaTable As DataTable = conn.GetSchema("Columns", New String() {Nothing, Nothing, "Patients"})
-                For Each row As DataRow In schemaTable.Rows
-                    Dim columnName As String = row("COLUMN_NAME").ToString()
-                Next
+                'Dim schemaTable As DataTable = conn.GetSchema("Columns", New String() {Nothing, Nothing, "Patients"})
+                'For Each row As DataRow In schemaTable.Rows
+                'Dim columnName As String = row("COLUMN_NAME").ToString()
+                'Next
                 cmd.ExecuteNonQuery()
                 conn.Close()
             Next
+            MessageBox.Show("Successfully deleted Record")
+            Dim previousform As Form = Application.OpenForms.OfType(Of Home)().FirstOrDefault()
+            If previousform IsNot Nothing Then
+                previousform.Show()
+            End If
+            Me.Close()
         End If
-        MessageBox.Show("Successfully deleted Record")
-        Dim previousform As Form = Application.OpenForms.OfType(Of Home)().FirstOrDefault()
-        If previousform IsNot Nothing Then
-            previousform.Show()
-        End If
-        Me.Close()
     End Sub
 End Class

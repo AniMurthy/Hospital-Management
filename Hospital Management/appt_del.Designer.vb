@@ -82,12 +82,12 @@ Partial Class appt_del
         Me.del_rec.Name = "del_rec"
         Me.del_rec.Size = New System.Drawing.Size(204, 84)
         Me.del_rec.TabIndex = 2
-        Me.del_rec.Text = "Delete"
+        Me.del_rec.Text = "Close"
         Me.del_rec.UseVisualStyleBackColor = True
         '
         'del
         '
-        Me.del.HeaderText = "Delete Appointment"
+        Me.del.HeaderText = "Close Appointment"
         Me.del.MinimumWidth = 8
         Me.del.Name = "del"
         Me.del.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
