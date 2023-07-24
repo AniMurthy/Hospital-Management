@@ -34,7 +34,7 @@ Public Class appt_del
         'Make sure some row is being deleted
         If ids.Count > 0 Then
             For Each num As Integer In ids
-                Dim conn As New SqlConnection("Data Source=LAPTOP-C6S94HN4;Initial Catalog=Hospital;Integrated Security=True")
+                Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
                 Dim cmd As New SqlCommand("Update Appointments set status = 'completed' Where AptID = @val", conn)
                 cmd.Parameters.AddWithValue("@val", num)
                 conn.Open()
@@ -43,15 +43,14 @@ Public Class appt_del
                 conn.Close()
             Next
             MessageBox.Show("Successfully updated Records")
+            Dim previousform As Form = Application.OpenForms.OfType(Of Home)().FirstOrDefault()
+            If previousform IsNot Nothing Then
+                previousform.Show()
+            End If
+            Me.Close()
         Else
             MessageBox.Show("Please setect an appointment to close")
         End If
-
-        Dim previousform As Form = Application.OpenForms.OfType(Of Home)().FirstOrDefault()
-        If previousform IsNot Nothing Then
-            previousform.Show()
-        End If
-        Me.Close()
     End Sub
 
 End Class

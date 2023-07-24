@@ -50,7 +50,7 @@ Public Class Doc_update
                     If IsNumericString(sal_txt.Text) Then
                         If IsValidEmail(email_txt.Text) Then
                             'Esatblish Connection
-                            Dim conn As New SqlConnection("Data Source=LAPTOP-C6S94HN4;Initial Catalog=Hospital;Integrated Security=True")
+                            Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
                             Dim cmd As New SqlCommand("UPDATE Doctor SET DocName = @name, Gender = @gen, Experience = @age ,Specialisation = @spl,Qualification = @qual, ContactNumber = @contact, EmailID = @email,Salary = @sal Where DocID = @id", conn)
                             cmd.Parameters.AddWithValue("@id", id)
                             cmd.Parameters.AddWithValue("@name", name_txt.Text)

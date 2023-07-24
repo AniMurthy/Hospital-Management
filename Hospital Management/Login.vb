@@ -5,7 +5,7 @@ Public Class Login
 
     Private Sub login_btn_Click(sender As Object, e As EventArgs) Handles login_btn.Click
         'Make SQL connection
-        Dim conn As New SqlConnection("Data Source=LAPTOP-C6S94HN4;Initial Catalog=Hospital;Integrated Security=True")
+        Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
         'SQL Comamnd to be executed
         Dim cmd As New SqlCommand("Select Username , Password from Users where Username = @username and Password = @password", conn)
         'Open the connection

@@ -26,7 +26,6 @@ Partial Class View_appt
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.AptIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PntIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DOCIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AppointmentTimeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.StatusDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AppointmentsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -40,15 +39,17 @@ Partial Class View_appt
         '
         'DataGridView1
         '
+        Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.AptIDDataGridViewTextBoxColumn, Me.PntIDDataGridViewTextBoxColumn, Me.DOCIDDataGridViewTextBoxColumn, Me.AppointmentTimeDataGridViewTextBoxColumn, Me.StatusDataGridViewTextBoxColumn})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.AptIDDataGridViewTextBoxColumn, Me.PntIDDataGridViewTextBoxColumn, Me.AppointmentTimeDataGridViewTextBoxColumn, Me.StatusDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.AppointmentsBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(27, 51)
+        Me.DataGridView1.Location = New System.Drawing.Point(24, 41)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 62
         Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(1419, 680)
+        Me.DataGridView1.Size = New System.Drawing.Size(1261, 544)
         Me.DataGridView1.TabIndex = 0
         '
         'AptIDDataGridViewTextBoxColumn
@@ -67,14 +68,6 @@ Partial Class View_appt
         Me.PntIDDataGridViewTextBoxColumn.MinimumWidth = 8
         Me.PntIDDataGridViewTextBoxColumn.Name = "PntIDDataGridViewTextBoxColumn"
         Me.PntIDDataGridViewTextBoxColumn.Width = 150
-        '
-        'DOCIDDataGridViewTextBoxColumn
-        '
-        Me.DOCIDDataGridViewTextBoxColumn.DataPropertyName = "DOCID"
-        Me.DOCIDDataGridViewTextBoxColumn.HeaderText = "DOCID"
-        Me.DOCIDDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.DOCIDDataGridViewTextBoxColumn.Name = "DOCIDDataGridViewTextBoxColumn"
-        Me.DOCIDDataGridViewTextBoxColumn.Width = 150
         '
         'AppointmentTimeDataGridViewTextBoxColumn
         '
@@ -104,9 +97,10 @@ Partial Class View_appt
         '
         'bck_btn
         '
-        Me.bck_btn.Location = New System.Drawing.Point(1452, 51)
+        Me.bck_btn.Location = New System.Drawing.Point(1291, 41)
+        Me.bck_btn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.bck_btn.Name = "bck_btn"
-        Me.bck_btn.Size = New System.Drawing.Size(136, 57)
+        Me.bck_btn.Size = New System.Drawing.Size(121, 46)
         Me.bck_btn.TabIndex = 1
         Me.bck_btn.Text = "Back"
         Me.bck_btn.UseVisualStyleBackColor = True
@@ -117,11 +111,12 @@ Partial Class View_appt
         '
         'View_appt
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1600, 743)
+        Me.ClientSize = New System.Drawing.Size(1422, 594)
         Me.Controls.Add(Me.bck_btn)
         Me.Controls.Add(Me.DataGridView1)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "View_appt"
         Me.Text = "View_appt"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

@@ -26,19 +26,19 @@ Partial Class Pnt_del
         Me.bck_btn = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.del = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.del_rec = New System.Windows.Forms.Button()
-        Me.HospitalDataSet = New Hospital_Management.HospitalDataSet()
-        Me.PatientsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.PatientsTableAdapter = New Hospital_Management.HospitalDataSetTableAdapters.PatientsTableAdapter()
         Me.PatientIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PatientNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GenderDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AgeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AddressDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ContactNumberDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PatientsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.HospitalDataSet = New Hospital_Management.HospitalDataSet()
+        Me.del_rec = New System.Windows.Forms.Button()
+        Me.PatientsTableAdapter = New Hospital_Management.HospitalDataSetTableAdapters.PatientsTableAdapter()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.HospitalDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PatientsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HospitalDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'bck_btn
@@ -71,30 +71,6 @@ Partial Class Pnt_del
         Me.del.MinimumWidth = 6
         Me.del.Name = "del"
         Me.del.Width = 125
-        '
-        'del_rec
-        '
-        Me.del_rec.Location = New System.Drawing.Point(1033, 95)
-        Me.del_rec.Margin = New System.Windows.Forms.Padding(4)
-        Me.del_rec.Name = "del_rec"
-        Me.del_rec.Size = New System.Drawing.Size(155, 59)
-        Me.del_rec.TabIndex = 2
-        Me.del_rec.Text = "Delete Records"
-        Me.del_rec.UseVisualStyleBackColor = True
-        '
-        'HospitalDataSet
-        '
-        Me.HospitalDataSet.DataSetName = "HospitalDataSet"
-        Me.HospitalDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'PatientsBindingSource
-        '
-        Me.PatientsBindingSource.DataMember = "Patients"
-        Me.PatientsBindingSource.DataSource = Me.HospitalDataSet
-        '
-        'PatientsTableAdapter
-        '
-        Me.PatientsTableAdapter.ClearBeforeFill = True
         '
         'PatientIDDataGridViewTextBoxColumn
         '
@@ -145,6 +121,30 @@ Partial Class Pnt_del
         Me.ContactNumberDataGridViewTextBoxColumn.Name = "ContactNumberDataGridViewTextBoxColumn"
         Me.ContactNumberDataGridViewTextBoxColumn.Width = 125
         '
+        'PatientsBindingSource
+        '
+        Me.PatientsBindingSource.DataMember = "Patients"
+        Me.PatientsBindingSource.DataSource = Me.HospitalDataSet
+        '
+        'HospitalDataSet
+        '
+        Me.HospitalDataSet.DataSetName = "HospitalDataSet"
+        Me.HospitalDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'del_rec
+        '
+        Me.del_rec.Location = New System.Drawing.Point(1033, 95)
+        Me.del_rec.Margin = New System.Windows.Forms.Padding(4)
+        Me.del_rec.Name = "del_rec"
+        Me.del_rec.Size = New System.Drawing.Size(155, 59)
+        Me.del_rec.TabIndex = 2
+        Me.del_rec.Text = "Delete Records"
+        Me.del_rec.UseVisualStyleBackColor = True
+        '
+        'PatientsTableAdapter
+        '
+        Me.PatientsTableAdapter.ClearBeforeFill = True
+        '
         'Pnt_del
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -157,8 +157,8 @@ Partial Class Pnt_del
         Me.Name = "Pnt_del"
         Me.Text = "Pnt_del"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.HospitalDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PatientsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HospitalDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

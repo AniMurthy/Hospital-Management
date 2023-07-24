@@ -4,7 +4,7 @@ Imports Hospital_Management.HospitalDataSet
 
 Public Class appt_add
     Private Sub appt_add_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim conn As New SqlConnection("Data Source=LAPTOP-C6S94HN4;Initial Catalog=Hospital;Integrated Security=True")
+        Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
         'SQL Comamnd to be executed
         Dim cmd1 As New SqlCommand("select * from Patients where PatientID not in (select PntID from Appointments where Status = 'Pending')", conn)
         Dim cmd2 As New SqlCommand("select * from Doctor where DocID not in (select DOCID from Appointments where Status = 'Pending')", conn)
@@ -39,27 +39,31 @@ Public Class appt_add
     Private Sub Add_apt_Click(sender As Object, e As EventArgs) Handles Add_apt.Click
         status = "Pending"
         time = appmt_time.Value
+        If DocID_txt.Text = "" Or PntID_txt.Text = "" Then
+            MessageBox.Show("Please select doctor and patient")
+        Else
 
-        'Make SQL connection
-        Dim conn As New SqlConnection("Data Source=LAPTOP-C6S94HN4;Initial Catalog=Hospital;Integrated Security=True")
-        'SQL Comamnd to be executed
-        Dim cmd As New SqlCommand("Insert into Appointments (PntID,DocID,AppointmentTime,Status) values(@pntid,@docid,@time,@status)", conn)
-        'Pass the values to the SQL Command
-        cmd.Parameters.AddWithValue("@pntid", pntid)
-        cmd.Parameters.AddWithValue("@docid", docid)
-        cmd.Parameters.AddWithValue("@time", time)
-        cmd.Parameters.AddWithValue("@status", status)
-        'Open the connection
-        conn.Open()
-        'Execute Command
-        Dim res As Integer = cmd.ExecuteNonQuery()
-        'Check if the query was executed succesfully. If it was not, the result will be 0. If it was executed succesfully the result is 0
-        If res > 0 Then
-            Dim home As New Home
-            home.Show()
-            Me.Close()
+            'Make SQL connection
+            Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
+            'SQL Comamnd to be executed
+            Dim cmd As New SqlCommand("Insert into Appointments (PntID,DocID,AppointmentTime,Status) values(@pntid,@docid,@time,@status)", conn)
+            'Pass the values to the SQL Command
+            cmd.Parameters.AddWithValue("@pntid", pntid)
+            cmd.Parameters.AddWithValue("@docid", docid)
+            cmd.Parameters.AddWithValue("@time", time)
+            cmd.Parameters.AddWithValue("@status", status)
+            'Open the connection
+            conn.Open()
+            'Execute Command
+            Dim res As Integer = cmd.ExecuteNonQuery()
+            'Check if the query was executed succesfully. If it was not, the result will be 0. If it was executed succesfully the result is 0
+            If res > 0 Then
+                Dim home As New Home
+                home.Show()
+                Me.Close()
+            End If
+            conn.Close()
         End If
-        conn.Close()
     End Sub
 
     Private Sub appmt_time_ValueChanged(sender As Object, e As EventArgs) Handles appmt_time.ValueChanged

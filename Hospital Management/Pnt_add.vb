@@ -30,10 +30,10 @@ Public Class Pnt_add
         gen = gender.Text
         age = pnt_age_txt.Text
         num = pnt_num_txt.Text
-        If IsNumericString(age) Then
+        If IsNumericString(age) And age < 110 Then
             If IsNumericString(num) And num.Length = 10 Then
                 'Esatblish Connection
-                Dim conn As New SqlConnection("Data Source=LAPTOP-C6S94HN4;Initial Catalog=Hospital;Integrated Security=True")
+                Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
                 Dim cmd As New SqlCommand("Insert Into Patients (PatientName,Gender,Age,Address,ContactNumber) Values(@name,@gen,@age,@addr,@num)", conn)
                 cmd.Parameters.AddWithValue("@name", name)
                 cmd.Parameters.AddWithValue("@gen", gen)

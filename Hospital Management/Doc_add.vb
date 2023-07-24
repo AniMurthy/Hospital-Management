@@ -54,7 +54,7 @@ Public Class Doc_add
                 If IsNumericString(sal) Then
                     If IsNumericString(contact) And contact.Length = 10 Then
                         If IsValidEmail(email_txt.Text) Then
-                            Dim conn As New SqlConnection("Data Source=LAPTOP-C6S94HN4;Initial Catalog=Hospital;Integrated Security=True")
+                            Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
                             Dim cmd As New SqlCommand("Insert Into Doctor (DocName,Gender,Experience,EmailID,Qualification,Specialisation,ContactNumber,Salary) Values(@name,@gen,@age,@email,@qual,@spl,@contact,@sal)", conn)
                             cmd.Parameters.AddWithValue("@name", Name)
                             cmd.Parameters.AddWithValue("@gen", gen)

@@ -2,6 +2,10 @@
     Private Sub Doc_view_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'HospitalDataSet.Doctor' table. You can move, or remove it, as needed.
         Me.DoctorTableAdapter.Fill(Me.HospitalDataSet.Doctor)
+        'TODO: This line of code loads data into the 'HospitalDataSet.Doctor' table. You can move, or remove it, as needed.
+        Me.DoctorTableAdapter.Fill(Me.HospitalDataSet.Doctor)
+        'TODO: This line of code loads data into the 'HospitalDataSet.Doctor' table. You can move, or remove it, as needed.
+        Me.DoctorTableAdapter.Fill(Me.HospitalDataSet.Doctor)
         'TODO: This line of code loads data into the 'HospitalDataSet1.Doctor' table. You can move, or remove it, as needed.
         Me.DoctorTableAdapter.Fill(Me.HospitalDataSet.Doctor)
 
