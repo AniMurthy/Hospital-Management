@@ -33,6 +33,10 @@ Public Class Doc_add
         Dim pattern As String = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
         Return Regex.IsMatch(email, pattern)
     End Function
+    Function IsValidname(email As String) As Boolean
+        Dim pattern As String = "^[a-zA-Z]$"
+        Return Regex.IsMatch(email, pattern)
+    End Function
     Private Sub add_doc_Click(sender As Object, e As EventArgs) Handles add_doc.Click
 
         'Check if any field is empty
@@ -54,32 +58,36 @@ Public Class Doc_add
                 If IsNumericString(sal) Then
                     If IsNumericString(contact) And contact.Length = 10 Then
                         If IsValidEmail(email_txt.Text) Then
-                            Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
-                            Dim cmd As New SqlCommand("Insert Into Doctor (DocName,Gender,Experience,EmailID,Qualification,Specialisation,ContactNumber,Salary) Values(@name,@gen,@age,@email,@qual,@spl,@contact,@sal)", conn)
-                            cmd.Parameters.AddWithValue("@name", Name)
-                            cmd.Parameters.AddWithValue("@gen", gen)
-                            cmd.Parameters.AddWithValue("@age", age)
-                            cmd.Parameters.AddWithValue("@spl", specialisation)
-                            cmd.Parameters.AddWithValue("@qual", qualification)
-                            cmd.Parameters.AddWithValue("@contact", contact)
-                            cmd.Parameters.AddWithValue("@email", email)
-                            cmd.Parameters.AddWithValue("@sal", sal)
+                            If IsValidname(d_name) Then
+                                Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
+                                Dim cmd As New SqlCommand("Insert Into Doctor (DocName,Gender,Experience,EmailID,Qualification,Specialisation,ContactNumber,Salary) Values(@name,@gen,@age,@email,@qual,@spl,@contact,@sal)", conn)
+                                cmd.Parameters.AddWithValue("@name", d_name)
+                                cmd.Parameters.AddWithValue("@gen", gen)
+                                cmd.Parameters.AddWithValue("@age", age)
+                                cmd.Parameters.AddWithValue("@spl", specialisation)
+                                cmd.Parameters.AddWithValue("@qual", qualification)
+                                cmd.Parameters.AddWithValue("@contact", contact)
+                                cmd.Parameters.AddWithValue("@email", email)
+                                cmd.Parameters.AddWithValue("@sal", sal)
 
-                            conn.Open()
-                            Dim Res As Integer = cmd.ExecuteNonQuery()
-                            If Res > 0 Then
-                                MessageBox.Show("Entered successfully")
-                                Dim previousform As Form = Application.OpenForms.OfType(Of Home)().FirstOrDefault()
-                                If previousform IsNot Nothing Then
-                                    previousform.Show()
-                                    Me.Close()
+                                conn.Open()
+                                Dim Res As Integer = cmd.ExecuteNonQuery()
+                                If Res > 0 Then
+                                    MessageBox.Show("Entered successfully")
+                                    Dim previousform As Form = Application.OpenForms.OfType(Of Home)().FirstOrDefault()
+                                    If previousform IsNot Nothing Then
+                                        previousform.Show()
+                                        Me.Close()
+                                    End If
+                                Else
+                                    MessageBox.Show("Error occured while entering values")
                                 End If
+                                conn.Close()
                             Else
-                                MessageBox.Show("Error occured while entering values")
+                                MessageBox.Show("Invalid name")
                             End If
-                            conn.Close()
                         Else
-                            MessageBox.Show("Invalid email")
+                                MessageBox.Show("Invalid email")
                         End If
                     Else
                             'MessageBox.Show("Contact number must be all digits")

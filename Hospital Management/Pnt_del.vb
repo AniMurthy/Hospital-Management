@@ -23,10 +23,14 @@ Public Class Pnt_del
 
             For Each num As Integer In ids
                 Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
+                Dim cmd2 As New SqlCommand("Delete from Appointments Where PntID = @val", conn)
+                cmd2.Parameters.AddWithValue("@val", num)
                 Dim cmd As New SqlCommand("Delete from Patients Where PatientID = @val", conn)
                 cmd.Parameters.AddWithValue("@val", num)
                 conn.Open()
+                cmd2.ExecuteNonQuery()
                 cmd.ExecuteNonQuery()
+
                 conn.Close()
             Next
             MessageBox.Show("Successfully deleted Record")

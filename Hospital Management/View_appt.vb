@@ -2,6 +2,8 @@
     Private Sub View_appt_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'HospitalDataSet.Appointments' table. You can move, or remove it, as needed.
         Me.AppointmentsTableAdapter.Fill(Me.HospitalDataSet.Appointments)
+        'TODO: This line of code loads data into the 'HospitalDataSet.Appointments' table. You can move, or remove it, as needed.
+        Me.AppointmentsTableAdapter.Fill(Me.HospitalDataSet.Appointments)
 
     End Sub
 

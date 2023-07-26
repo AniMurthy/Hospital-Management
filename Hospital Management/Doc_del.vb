@@ -32,14 +32,17 @@ Public Class Doc_del
         Else
             For Each num As Integer In ids
                 Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
-                Dim cmd As New SqlCommand("Delete from Doctor Where DocID = @val", conn)
+                Dim cmd As New SqlCommand("Delete from Appointments Where DocID = @val", conn)
                 cmd.Parameters.AddWithValue("@val", num)
+                Dim cmd2 As New SqlCommand("Delete from Doctor Where DocID = @val", conn)
+                cmd2.Parameters.AddWithValue("@val", num)
                 conn.Open()
                 'Dim schemaTable As DataTable = conn.GetSchema("Columns", New String() {Nothing, Nothing, "Patients"})
                 'For Each row As DataRow In schemaTable.Rows
                 'Dim columnName As String = row("COLUMN_NAME").ToString()
                 'Next
                 cmd.ExecuteNonQuery()
+                cmd2.ExecuteNonQuery()
                 conn.Close()
             Next
             MessageBox.Show("Successfully deleted Record")
