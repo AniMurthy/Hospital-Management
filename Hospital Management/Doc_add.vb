@@ -34,7 +34,7 @@ Public Class Doc_add
         Return Regex.IsMatch(email, pattern)
     End Function
     Function IsValidname(email As String) As Boolean
-        Dim pattern As String = "^[a-zA-Z]$"
+        Dim pattern As String = "^[a-zA-Z]+$"
         Return Regex.IsMatch(email, pattern)
     End Function
     Private Sub add_doc_Click(sender As Object, e As EventArgs) Handles add_doc.Click

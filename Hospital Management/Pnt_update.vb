@@ -33,41 +33,57 @@ Public Class Pnt_update
     End Function
     Private Sub update_pnt_Click(sender As Object, e As EventArgs) Handles update_pnt.Click
         Dim chk As Integer
-        If gender.Text = "Male" Or gender.Text = "Female" Or gender.Text = "Others" Then
-            If IsNumericString(pnt_age_txt.Text) Then
-                If IsNumericString(pnt_num_txt.Text) And pnt_num_txt.Text.Length = 10 Then
-                    'Esatblish Connection
-                    Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
-                    'Dim cmd As New SqlCommand("Insert Into Patients (PatientName,Gender,Age,Address,ContactNumber) Values(@name,@gen,@age,@addr,@num)", conn)
-                    Dim cmd As New SqlCommand("UPDATE Patients SET PatientName = @name, Gender = @gen, Age = @age ,Address = @addr,ContactNumber = @num WHERE  PatientID = @id", conn)
-                    cmd.Parameters.AddWithValue("@id", id)
-                    cmd.Parameters.AddWithValue("@name", pnt_name_txt.Text)
-                    cmd.Parameters.AddWithValue("@gen", gender.Text)
-                    cmd.Parameters.AddWithValue("@age", Integer.Parse(pnt_age_txt.Text))
-                    cmd.Parameters.AddWithValue("@addr", pnt_address_txt.Text)
-                    cmd.Parameters.AddWithValue("@num", pnt_num_txt.Text)
+        If pnt_name_txt.Text = "" Or pnt_address_txt.Text = "" Or gender.Text = "" Or pnt_age_txt.Text = "" Or pnt_num_txt.Text = "" Then
+            MessageBox.Show("Do not leave any feild empty")
+        Else
+            If gender.Text = "Male" Or gender.Text = "Female" Or gender.Text = "Others" Then
+                If IsNumericString(pnt_age_txt.Text) And pnt_age_txt.Text < 110 Then
+                    If IsNumericString(pnt_num_txt.Text) And pnt_num_txt.Text.Length = 10 Then
+                        Dim input2 As String = pnt_address_txt.Text
+                        Dim pattern2 As String = "^[A-Za-z]+$"
+                        Dim input3 As String = pnt_name_txt.Text
+                        Dim pattern3 As String = "^[A-Za-z]+$"
+                        If System.Text.RegularExpressions.Regex.IsMatch(input3, pattern3) Then
+                            If System.Text.RegularExpressions.Regex.IsMatch(input2, pattern2) Then
+                                'Esatblish Connection
+                                Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
+                                'Dim cmd As New SqlCommand("Insert Into Patients (PatientName,Gender,Age,Address,ContactNumber) Values(@name,@gen,@age,@addr,@num)", conn)
+                                Dim cmd As New SqlCommand("UPDATE Patients SET PatientName = @name, Gender = @gen, Age = @age ,Address = @addr,ContactNumber = @num WHERE  PatientID = @id", conn)
+                                cmd.Parameters.AddWithValue("@id", id)
+                                cmd.Parameters.AddWithValue("@name", pnt_name_txt.Text)
+                                cmd.Parameters.AddWithValue("@gen", gender.Text)
+                                cmd.Parameters.AddWithValue("@age", Integer.Parse(pnt_age_txt.Text))
+                                cmd.Parameters.AddWithValue("@addr", pnt_address_txt.Text)
+                                cmd.Parameters.AddWithValue("@num", pnt_num_txt.Text)
 
-                    conn.Open()
-                    Dim Res As Integer = cmd.ExecuteNonQuery()
-                    If Res > 0 Then
-                        MessageBox.Show("Entered successfully")
-                        Dim previousform As Form = Application.OpenForms.OfType(Of Home)().FirstOrDefault()
-                        If previousform IsNot Nothing Then
-                            previousform.Show()
-                            Me.Close()
+                                conn.Open()
+                                Dim Res As Integer = cmd.ExecuteNonQuery()
+                                If Res > 0 Then
+                                    MessageBox.Show("Entered successfully")
+                                    Dim previousform As Form = Application.OpenForms.OfType(Of Home)().FirstOrDefault()
+                                    If previousform IsNot Nothing Then
+                                        previousform.Show()
+                                        Me.Close()
+                                    End If
+                                Else
+                                    MessageBox.Show("Error occured while entering values")
+                                End If
+                                conn.Close()
+                            Else
+                                MessageBox.Show("invalid address")
+                            End If
+                        Else
+                            MessageBox.Show("invalid name")
                         End If
                     Else
-                        MessageBox.Show("Error occured while entering values")
+                        MessageBox.Show("contact number must be 10 digits!!!")
                     End If
-                    conn.Close()
                 Else
-                    MessageBox.Show("Contact Number must be 10 digits!!!")
+                    MessageBox.Show("invalid age")
                 End If
             Else
-                MessageBox.Show("Age must be Integer")
+                MessageBox.Show("invalid choice")
             End If
-        Else
-            MessageBox.Show("gender must be either 'M' or 'F'")
         End If
     End Sub
 
@@ -77,5 +93,11 @@ Public Class Pnt_update
             previousform.Show()
         End If
         Me.Close()
+    End Sub
+    Private Sub pnt_age_txt_KeyPress(sender As Object, e As KeyPressEventArgs) Handles pnt_age_txt.KeyPress
+
+        If Not Char.IsDigit(e.KeyChar) AndAlso e.KeyChar <> ControlChars.Back Then
+            e.Handled = True
+        End If
     End Sub
 End Class
