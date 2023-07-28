@@ -94,7 +94,7 @@ Public Class Doc_update
                             MessageBox.Show("salary must be integer!")
                         End If
                     Else
-                        MessageBox.Show("check no of digits")
+                        MessageBox.Show("check no of digits in contact number")
                     End If
                 Else
                     MessageBox.Show("invalid experience entry")

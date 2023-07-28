@@ -40,7 +40,7 @@ Public Class Pnt_update
                 If IsNumericString(pnt_age_txt.Text) And pnt_age_txt.Text < 110 Then
                     If IsNumericString(pnt_num_txt.Text) And pnt_num_txt.Text.Length = 10 Then
                         Dim input2 As String = pnt_address_txt.Text
-                        Dim pattern2 As String = "^[A-Za-z]+$"
+                        Dim pattern2 As String = "^[A-Za-z0-9# ]+$"
                         Dim input3 As String = pnt_name_txt.Text
                         Dim pattern3 As String = "^[A-Za-z]+$"
                         If System.Text.RegularExpressions.Regex.IsMatch(input3, pattern3) Then

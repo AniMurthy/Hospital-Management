@@ -41,7 +41,7 @@ Public Class Pnt_add
                     Dim pattern As String = "^[A-Za-z]+$"
                     If System.Text.RegularExpressions.Regex.IsMatch(input, pattern) Then
                         Dim input1 As String = pnt_address_txt.Text
-                        Dim pattern1 As String = "^[A-Za-z]+$"
+                        Dim pattern1 As String = "^[A-Za-z0-9# ]+$"
                         If System.Text.RegularExpressions.Regex.IsMatch(input1, pattern1) Then
                             'Esatblish Connection
                             Dim conn As New SqlConnection("Data Source=LAPTOP-G734VL11;Initial Catalog=Hospital;Integrated Security=True")
