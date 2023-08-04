@@ -76,13 +76,13 @@ Public Class Pnt_update
                             MessageBox.Show("invalid name")
                         End If
                     Else
-                        MessageBox.Show("contact number must be 10 digits!!!")
+                        MessageBox.Show("verify contact number")
                     End If
                 Else
                     MessageBox.Show("invalid age")
                 End If
             Else
-                MessageBox.Show("invalid choice")
+                MessageBox.Show("invalid gender")
             End If
         End If
     End Sub

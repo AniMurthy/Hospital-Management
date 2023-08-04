@@ -55,7 +55,7 @@ Public Class Doc_update
                         If IsNumericString(sal_txt.Text) Then
                             If IsValidEmail(email_txt.Text) Then
                                 Dim namei As String = name_txt.Text
-                                Dim pattern4 As String = "^[A-Za-z]+$"
+                                Dim pattern4 As String = "^[A-Za-z ]+$"
                                 If System.Text.RegularExpressions.Regex.IsMatch(namei, pattern4) Then
 
                                     'Esatblish Connection
@@ -94,7 +94,7 @@ Public Class Doc_update
                             MessageBox.Show("salary must be integer!")
                         End If
                     Else
-                        MessageBox.Show("check no of digits in contact number")
+                        MessageBox.Show("verify contact number")
                     End If
                 Else
                     MessageBox.Show("invalid experience entry")

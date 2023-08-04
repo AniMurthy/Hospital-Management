@@ -161,7 +161,7 @@ Partial Class Doc_view
         Me.Controls.Add(Me.bck_btn)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "Doc_view"
-        Me.Text = "Doc_view"
+        Me.Text = "7"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DoctorBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.HospitalDataSet, System.ComponentModel.ISupportInitialize).EndInit()

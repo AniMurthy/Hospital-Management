@@ -49,10 +49,10 @@ Partial Class Pnt_view
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
         Me.DataGridView1.DataSource = Me.PatientsBindingSource
         Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders
-        Me.DataGridView1.Size = New System.Drawing.Size(1317, 678)
+        Me.DataGridView1.Size = New System.Drawing.Size(1171, 542)
         Me.DataGridView1.TabIndex = 0
         '
         'DataGridViewTextBoxColumn1
@@ -62,7 +62,7 @@ Partial Class Pnt_view
         Me.DataGridViewTextBoxColumn1.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
         Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        Me.DataGridViewTextBoxColumn1.Width = 112
+        Me.DataGridViewTextBoxColumn1.Width = 90
         '
         'DataGridViewTextBoxColumn2
         '
@@ -70,7 +70,7 @@ Partial Class Pnt_view
         Me.DataGridViewTextBoxColumn2.HeaderText = "PatientName"
         Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.Width = 137
+        Me.DataGridViewTextBoxColumn2.Width = 114
         '
         'DataGridViewTextBoxColumn3
         '
@@ -78,7 +78,7 @@ Partial Class Pnt_view
         Me.DataGridViewTextBoxColumn3.HeaderText = "Gender"
         Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.Width = 99
+        Me.DataGridViewTextBoxColumn3.Width = 81
         '
         'DataGridViewTextBoxColumn4
         '
@@ -86,7 +86,7 @@ Partial Class Pnt_view
         Me.DataGridViewTextBoxColumn4.HeaderText = "Age"
         Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.Width = 74
+        Me.DataGridViewTextBoxColumn4.Width = 61
         '
         'DataGridViewTextBoxColumn5
         '
@@ -94,7 +94,7 @@ Partial Class Pnt_view
         Me.DataGridViewTextBoxColumn5.HeaderText = "Address"
         Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.Width = 104
+        Me.DataGridViewTextBoxColumn5.Width = 87
         '
         'DataGridViewTextBoxColumn6
         '
@@ -102,7 +102,7 @@ Partial Class Pnt_view
         Me.DataGridViewTextBoxColumn6.HeaderText = "ContactNumber"
         Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.Width = 157
+        Me.DataGridViewTextBoxColumn6.Width = 129
         '
         'PatientsBindingSource
         '
@@ -116,10 +116,10 @@ Partial Class Pnt_view
         '
         'bck_btn
         '
-        Me.bck_btn.Location = New System.Drawing.Point(1325, 14)
-        Me.bck_btn.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.bck_btn.Location = New System.Drawing.Point(1178, 11)
+        Me.bck_btn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.bck_btn.Name = "bck_btn"
-        Me.bck_btn.Size = New System.Drawing.Size(186, 59)
+        Me.bck_btn.Size = New System.Drawing.Size(165, 47)
         Me.bck_btn.TabIndex = 1
         Me.bck_btn.Text = "Back"
         Me.bck_btn.UseVisualStyleBackColor = True
@@ -130,12 +130,12 @@ Partial Class Pnt_view
         '
         'Pnt_view
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1524, 692)
+        Me.ClientSize = New System.Drawing.Size(1355, 554)
         Me.Controls.Add(Me.bck_btn)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Pnt_view"
         Me.Text = "Pnt_view"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

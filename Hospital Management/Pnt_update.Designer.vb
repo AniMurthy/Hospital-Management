@@ -54,10 +54,10 @@ Partial Class Pnt_update
         '
         'bck_btn
         '
-        Me.bck_btn.Location = New System.Drawing.Point(1206, 43)
-        Me.bck_btn.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.bck_btn.Location = New System.Drawing.Point(1072, 34)
+        Me.bck_btn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.bck_btn.Name = "bck_btn"
-        Me.bck_btn.Size = New System.Drawing.Size(108, 37)
+        Me.bck_btn.Size = New System.Drawing.Size(96, 30)
         Me.bck_btn.TabIndex = 25
         Me.bck_btn.Text = "Back"
         Me.bck_btn.UseVisualStyleBackColor = True
@@ -65,19 +65,19 @@ Partial Class Pnt_update
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(26, 18)
+        Me.Label6.Location = New System.Drawing.Point(23, 14)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(169, 20)
+        Me.Label6.Size = New System.Drawing.Size(141, 16)
         Me.Label6.TabIndex = 24
         Me.Label6.Text = "Update Patient Details"
         '
         'update_pnt
         '
-        Me.update_pnt.Location = New System.Drawing.Point(652, 754)
-        Me.update_pnt.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.update_pnt.Location = New System.Drawing.Point(580, 603)
+        Me.update_pnt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.update_pnt.Name = "update_pnt"
-        Me.update_pnt.Size = New System.Drawing.Size(171, 58)
+        Me.update_pnt.Size = New System.Drawing.Size(152, 46)
         Me.update_pnt.TabIndex = 13
         Me.update_pnt.Text = "Update Records"
         Me.update_pnt.UseVisualStyleBackColor = True
@@ -91,12 +91,12 @@ Partial Class Pnt_update
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.update, Me.PatientIDDataGridViewTextBoxColumn, Me.PatientNameDataGridViewTextBoxColumn, Me.GenderDataGridViewTextBoxColumn, Me.AgeDataGridViewTextBoxColumn, Me.AddressDataGridViewTextBoxColumn, Me.ContactNumberDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.PatientsBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(30, 43)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.DataGridView1.Location = New System.Drawing.Point(27, 34)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersWidth = 62
-        Me.DataGridView1.Size = New System.Drawing.Size(1167, 246)
+        Me.DataGridView1.Size = New System.Drawing.Size(1037, 197)
         Me.DataGridView1.TabIndex = 26
         '
         'update
@@ -105,7 +105,7 @@ Partial Class Pnt_update
         Me.update.MinimumWidth = 8
         Me.update.Name = "update"
         Me.update.ReadOnly = True
-        Me.update.Width = 90
+        Me.update.Width = 78
         '
         'PatientIDDataGridViewTextBoxColumn
         '
@@ -114,7 +114,7 @@ Partial Class Pnt_update
         Me.PatientIDDataGridViewTextBoxColumn.MinimumWidth = 8
         Me.PatientIDDataGridViewTextBoxColumn.Name = "PatientIDDataGridViewTextBoxColumn"
         Me.PatientIDDataGridViewTextBoxColumn.ReadOnly = True
-        Me.PatientIDDataGridViewTextBoxColumn.Width = 112
+        Me.PatientIDDataGridViewTextBoxColumn.Width = 90
         '
         'PatientNameDataGridViewTextBoxColumn
         '
@@ -123,7 +123,7 @@ Partial Class Pnt_update
         Me.PatientNameDataGridViewTextBoxColumn.MinimumWidth = 8
         Me.PatientNameDataGridViewTextBoxColumn.Name = "PatientNameDataGridViewTextBoxColumn"
         Me.PatientNameDataGridViewTextBoxColumn.ReadOnly = True
-        Me.PatientNameDataGridViewTextBoxColumn.Width = 137
+        Me.PatientNameDataGridViewTextBoxColumn.Width = 114
         '
         'GenderDataGridViewTextBoxColumn
         '
@@ -132,7 +132,7 @@ Partial Class Pnt_update
         Me.GenderDataGridViewTextBoxColumn.MinimumWidth = 8
         Me.GenderDataGridViewTextBoxColumn.Name = "GenderDataGridViewTextBoxColumn"
         Me.GenderDataGridViewTextBoxColumn.ReadOnly = True
-        Me.GenderDataGridViewTextBoxColumn.Width = 99
+        Me.GenderDataGridViewTextBoxColumn.Width = 81
         '
         'AgeDataGridViewTextBoxColumn
         '
@@ -141,7 +141,7 @@ Partial Class Pnt_update
         Me.AgeDataGridViewTextBoxColumn.MinimumWidth = 8
         Me.AgeDataGridViewTextBoxColumn.Name = "AgeDataGridViewTextBoxColumn"
         Me.AgeDataGridViewTextBoxColumn.ReadOnly = True
-        Me.AgeDataGridViewTextBoxColumn.Width = 74
+        Me.AgeDataGridViewTextBoxColumn.Width = 61
         '
         'AddressDataGridViewTextBoxColumn
         '
@@ -150,7 +150,7 @@ Partial Class Pnt_update
         Me.AddressDataGridViewTextBoxColumn.MinimumWidth = 8
         Me.AddressDataGridViewTextBoxColumn.Name = "AddressDataGridViewTextBoxColumn"
         Me.AddressDataGridViewTextBoxColumn.ReadOnly = True
-        Me.AddressDataGridViewTextBoxColumn.Width = 104
+        Me.AddressDataGridViewTextBoxColumn.Width = 87
         '
         'ContactNumberDataGridViewTextBoxColumn
         '
@@ -159,7 +159,7 @@ Partial Class Pnt_update
         Me.ContactNumberDataGridViewTextBoxColumn.MinimumWidth = 8
         Me.ContactNumberDataGridViewTextBoxColumn.Name = "ContactNumberDataGridViewTextBoxColumn"
         Me.ContactNumberDataGridViewTextBoxColumn.ReadOnly = True
-        Me.ContactNumberDataGridViewTextBoxColumn.Width = 157
+        Me.ContactNumberDataGridViewTextBoxColumn.Width = 129
         '
         'PatientsBindingSource
         '
@@ -178,48 +178,48 @@ Partial Class Pnt_update
         'pnt_num_txt
         '
         Me.pnt_num_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnt_num_txt.Location = New System.Drawing.Point(764, 615)
-        Me.pnt_num_txt.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.pnt_num_txt.Location = New System.Drawing.Point(679, 492)
+        Me.pnt_num_txt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnt_num_txt.Name = "pnt_num_txt"
-        Me.pnt_num_txt.Size = New System.Drawing.Size(148, 35)
+        Me.pnt_num_txt.Size = New System.Drawing.Size(132, 30)
         Me.pnt_num_txt.TabIndex = 37
         '
         'pnt_address_txt
         '
         Me.pnt_address_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnt_address_txt.Location = New System.Drawing.Point(764, 465)
-        Me.pnt_address_txt.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.pnt_address_txt.Location = New System.Drawing.Point(679, 372)
+        Me.pnt_address_txt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnt_address_txt.Multiline = True
         Me.pnt_address_txt.Name = "pnt_address_txt"
-        Me.pnt_address_txt.Size = New System.Drawing.Size(148, 139)
+        Me.pnt_address_txt.Size = New System.Drawing.Size(132, 112)
         Me.pnt_address_txt.TabIndex = 36
         '
         'pnt_age_txt
         '
         Me.pnt_age_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnt_age_txt.Location = New System.Drawing.Point(764, 425)
-        Me.pnt_age_txt.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.pnt_age_txt.Location = New System.Drawing.Point(679, 340)
+        Me.pnt_age_txt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnt_age_txt.Name = "pnt_age_txt"
-        Me.pnt_age_txt.Size = New System.Drawing.Size(148, 35)
+        Me.pnt_age_txt.Size = New System.Drawing.Size(132, 30)
         Me.pnt_age_txt.TabIndex = 35
         '
         'pnt_name_txt
         '
         Me.pnt_name_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnt_name_txt.Location = New System.Drawing.Point(764, 345)
-        Me.pnt_name_txt.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.pnt_name_txt.Location = New System.Drawing.Point(679, 276)
+        Me.pnt_name_txt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnt_name_txt.Name = "pnt_name_txt"
-        Me.pnt_name_txt.Size = New System.Drawing.Size(148, 35)
+        Me.pnt_name_txt.Size = New System.Drawing.Size(132, 30)
         Me.pnt_name_txt.TabIndex = 33
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(562, 620)
+        Me.Label5.Location = New System.Drawing.Point(500, 496)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(187, 29)
+        Me.Label5.Size = New System.Drawing.Size(154, 25)
         Me.Label5.TabIndex = 32
         Me.Label5.Text = "Contact Number"
         '
@@ -227,10 +227,10 @@ Partial Class Pnt_update
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(562, 469)
+        Me.Label4.Location = New System.Drawing.Point(500, 375)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(102, 29)
+        Me.Label4.Size = New System.Drawing.Size(85, 25)
         Me.Label4.TabIndex = 31
         Me.Label4.Text = "Address"
         '
@@ -238,10 +238,10 @@ Partial Class Pnt_update
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(562, 429)
+        Me.Label3.Location = New System.Drawing.Point(500, 343)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(56, 29)
+        Me.Label3.Size = New System.Drawing.Size(48, 25)
         Me.Label3.TabIndex = 30
         Me.Label3.Text = "Age"
         '
@@ -249,10 +249,10 @@ Partial Class Pnt_update
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(562, 389)
+        Me.Label2.Location = New System.Drawing.Point(500, 311)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(94, 29)
+        Me.Label2.Size = New System.Drawing.Size(77, 25)
         Me.Label2.TabIndex = 29
         Me.Label2.Text = "Gender"
         '
@@ -260,27 +260,29 @@ Partial Class Pnt_update
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(562, 349)
+        Me.Label7.Location = New System.Drawing.Point(500, 279)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(78, 29)
+        Me.Label7.Size = New System.Drawing.Size(64, 25)
         Me.Label7.TabIndex = 28
         Me.Label7.Text = "Name"
         '
         'gender
         '
+        Me.gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.gender.FormattingEnabled = True
         Me.gender.Items.AddRange(New Object() {"Male", "Female", "Others"})
-        Me.gender.Location = New System.Drawing.Point(764, 390)
+        Me.gender.Location = New System.Drawing.Point(679, 312)
+        Me.gender.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.gender.Name = "gender"
-        Me.gender.Size = New System.Drawing.Size(148, 28)
+        Me.gender.Size = New System.Drawing.Size(132, 24)
         Me.gender.TabIndex = 44
         '
         'Pnt_update
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1431, 832)
+        Me.ClientSize = New System.Drawing.Size(1272, 666)
         Me.Controls.Add(Me.gender)
         Me.Controls.Add(Me.pnt_num_txt)
         Me.Controls.Add(Me.pnt_address_txt)
@@ -295,7 +297,7 @@ Partial Class Pnt_update
         Me.Controls.Add(Me.bck_btn)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.update_pnt)
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Pnt_update"
         Me.Text = "Pnt_update"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
